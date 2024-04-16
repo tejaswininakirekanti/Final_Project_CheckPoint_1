@@ -1,6 +1,6 @@
 # Final_Project_CheckPoint_1
 
-# Requirements Installation
+## Requirements Installation
 ```
 conda create -n your_env_name python=3.9
 conda activate your_env_name
@@ -12,7 +12,7 @@ pip3 install datasets
 ```
 You can copy and paste the above command in your terminal to create the environment.
 
-Pre-training
+## Pre-training
 ```
 bash scripts/pretrain.sh
 ```
@@ -27,7 +27,7 @@ Use the above command to start the pre-training stage.
 ```
 The above parameters represent the datasets of the three pre-training tasks proposed in the pre-training stage.
 
-Training
+## Training
 ```
 bash scripts/train.sh
 ```
@@ -41,7 +41,7 @@ Use the above command to start the training stage.
 ```
 The 'add_demonstration' represents whether to add demonstrations in the training stage. If this parameter is provided, the following four data paths related to the demonstration need to be provided.
 
-Testing
+## Testing
 ```
 bash scripts/test.sh
 ```
