@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python3 t5_main.py --seed 2023 --model_name_or_path t5-base --model_save_path ./models/noise_demos --dataset multiwoz --training --metric f1 --train_file_path /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/train.txt --dev_file_path /home/tnakirek/Demo-NSF/data/multiWOZ-new/valid/valid.txt
