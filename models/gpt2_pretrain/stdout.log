@@ -1,0 +1,58 @@
+2024-04-15 21:51:26 - INFO - Training arguments:
+{
+    "pretrain": true,
+    "seed": 2023,
+    "margin": 0.3,
+    "dataset": "multiwoz",
+    "training": false,
+    "testing": false,
+    "model_name_or_path": "gpt2",
+    "continue_training_path": null,
+    "model_save_path": "./models/gpt2_pretrain",
+    "force_del": true,
+    "eval_only": false,
+    "early_stop": true,
+    "train_file_path": "train.json",
+    "dev_file_path": "dev.json",
+    "test_file_path": "test.json",
+    "dropout": 0.1,
+    "batch_size": 8,
+    "eval_batch_size": 128,
+    "num_epochs": 1,
+    "learning_rate": 5e-05,
+    "evaluation_steps": 1000,
+    "max_seq_length": 256,
+    "num": 2,
+    "decode_max_seq_length": 128,
+    "gradient_clip": 1.0,
+    "patience": null,
+    "metric": "f1",
+    "clean_train_path": null,
+    "noise_train_path": null,
+    "clean_dev_path": null,
+    "noise_dev_path": null,
+    "eval_loss": 0.2,
+    "auxiliary_without_eval": true,
+    "logging_file_path": null,
+    "add_demonstration": false,
+    "demons_train_path": null,
+    "demons_out_path": null,
+    "demons_valid_path": null,
+    "demons_val_out_path": null,
+    "mask_output_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/mask.out",
+    "mask_input_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/mask.in",
+    "classify_output_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/classify1.out",
+    "classify_input_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/classify1.in",
+    "clean_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/seq.in",
+    "noise_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/char/seq.in"
+}
+2024-04-15 21:51:26 - INFO - Run experiments with random seed: 2023
+2024-04-15 21:51:26 - INFO - Saved training command to file: ./models/gpt2_pretrain/command.txt
+2024-04-15 21:51:26 - INFO - Saved training arguments to file: ./models/gpt2_pretrain/args.json
+2024-04-15 21:51:30 - INFO - Reading mask_task split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/mask.out and /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/mask.in
+2024-04-15 21:51:31 - INFO - Reading noise_to_clean_task split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/seq.in and /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/char/seq.in
+2024-04-15 21:51:31 - INFO - Reading classify_task split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/classify1.out and /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/classify1.in
+2024-04-15 21:51:31 - INFO - Start training, number of epochs: 1
+2024-04-15 21:51:31 - INFO - Training start for epoch 0
+2024-04-15 21:51:31 - INFO - Total number of batches: 7015
+2024-04-15 22:51:53 - INFO - One epoch finished, epoch=0, save model to ./models/gpt2_pretrain/pytorch_model.bin
