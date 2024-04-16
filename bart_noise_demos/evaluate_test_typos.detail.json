@@ -1,0 +1,1317 @@
+[
+    {
+        "sentence": "i'd like 2 find a train that leaves on monday and arrives by 7pm In the above sentence : ",
+        "true_ent": "monday is a day , 7pm is a arrive",
+        "pred_ent": "2 is a people , monday is a day , 7pm is a time"
+    },
+    {
+        "sentence": "i need to get away from peterborough In the above sentence : ",
+        "true_ent": "peterborough is a depart",
+        "pred_ent": "peterborough is a name"
+    },
+    {
+        "sentence": "leave stansted air aftr 11:45 In the above sentence : ",
+        "true_ent": "stansted air is a depart , 11:45 is a leave",
+        "pred_ent": "stansted air is a name , 11:45 is a time"
+    },
+    {
+        "sentence": "id like 2 deprt from stevenage after 19:45 In the above sentence : ",
+        "true_ent": "stevenage is a depart , 19:45 is a leave",
+        "pred_ent": "2 is a people , stevenage is a food , 19:45 is a time"
+    },
+    {
+        "sentence": "well . i am willing to go from cabridge to london liverpool street In the above sentence : ",
+        "true_ent": "london liverpool street is a depart",
+        "pred_ent": "london liverpool street is a name"
+    },
+    {
+        "sentence": "i wud like 2 leave after 20:15 In the above sentence : ",
+        "true_ent": "20:15 is a leave",
+        "pred_ent": "2 is a people , 20:15 is a time"
+    },
+    {
+        "sentence": "im lking fa train going to cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "lking fa train is a name"
+    },
+    {
+        "sentence": "well its broxbourne on tuesday In the above sentence : ",
+        "true_ent": "broxbourne is a depart , tuesday is a day",
+        "pred_ent": "broxbourne is a name , tuesday is a day"
+    },
+    {
+        "sentence": "id juss lyk to arrive by 1645 plz In the above sentence : ",
+        "true_ent": "1645 is a arrive",
+        "pred_ent": "juss lyk is a name"
+    },
+    {
+        "sentence": "i wanna go to cambridge by train , i have to get there at 11:30 In the above sentence : ",
+        "true_ent": "cambridge is a dest , 11:30 is a arrive",
+        "pred_ent": "11:30 is a time"
+    },
+    {
+        "sentence": "im departin frm ely In the above sentence : ",
+        "true_ent": "ely is a depart",
+        "pred_ent": "im departin frm ely is a name"
+    },
+    {
+        "sentence": "im headed 2 leicster frm cambridge on sat In the above sentence : ",
+        "true_ent": "leicster is a dest , cambridge is a depart , sat is a day",
+        "pred_ent": "2 leicster frm cambridge is a name"
+    },
+    {
+        "sentence": "oh . sorry its not morning 8:45 . its evening 8:45 . In the above sentence : ",
+        "true_ent": "",
+        "pred_ent": "8:45 is a time"
+    },
+    {
+        "sentence": "i want to arrive by 19:30 please In the above sentence : ",
+        "true_ent": "19:30 is a arrive",
+        "pred_ent": "19:30 is a time"
+    },
+    {
+        "sentence": "train departing from london kings cross ? In the above sentence : ",
+        "true_ent": "london kings cross is a depart",
+        "pred_ent": "london kings cross is a name"
+    },
+    {
+        "sentence": "saturday , to cambridge , pls In the above sentence : ",
+        "true_ent": "saturday is a day , cambridge is a dest",
+        "pred_ent": "saturday is a day"
+    },
+    {
+        "sentence": "the train shud go 2 cambcambr en arrive by 14:00 In the above sentence : ",
+        "true_ent": "cambcambr is a dest , 14:00 is a arrive",
+        "pred_ent": "2 is a people , cambcambr en arrive by 14:00 is a time"
+    },
+    {
+        "sentence": "im travelin on mon and need 2 leave aftr 1630 In the above sentence : ",
+        "true_ent": "mon is a day , 1630 is a leave",
+        "pred_ent": "2 is a people , 1630 is a time"
+    },
+    {
+        "sentence": "i need to arrive by 11:15 . In the above sentence : ",
+        "true_ent": "11:15 is a arrive",
+        "pred_ent": "11:15 is a time"
+    },
+    {
+        "sentence": "i need a train that arrves at 12:30 on wed . In the above sentence : ",
+        "true_ent": "12:30 is a arrive , wed is a day",
+        "pred_ent": "12:30 is a time"
+    },
+    {
+        "sentence": "im departing frm birmingham new st. to cambridge In the above sentence : ",
+        "true_ent": "birmingham new st. is a depart , cambridge is a dest",
+        "pred_ent": "Birmingham new st. is a name"
+    },
+    {
+        "sentence": "yes , i've 2 be in cambridge 12:30 , pls . In the above sentence : ",
+        "true_ent": "cambridge is a dest , 12:30 is a arrive",
+        "pred_ent": "2 is a people , 12:30 is a time"
+    },
+    {
+        "sentence": "id like 2 go on sunday In the above sentence : ",
+        "true_ent": "sunday is a day",
+        "pred_ent": "2 is a people , sunday is a day"
+    },
+    {
+        "sentence": "i need a train leavin cmabridge after 17:30 . In the above sentence : ",
+        "true_ent": "cmabridge is a depart , 17:30 is a leave",
+        "pred_ent": "leavin cmabridge is a name , 17:30 is a time"
+    },
+    {
+        "sentence": "2 stansted airprt on sat In the above sentence : ",
+        "true_ent": "stansted airprt is a dest , sat is a day",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "looking for a train dep. mon. out of cam. In the above sentence : ",
+        "true_ent": "mon. is a day , cam. is a depart",
+        "pred_ent": "dep. mon. is a name"
+    },
+    {
+        "sentence": "iam looking for a tran that goes to london liverpool street and leafes after 17:15 . In the above sentence : ",
+        "true_ent": "london liverpool street is a dest , 17:15 is a leave",
+        "pred_ent": "london liverpool street and leafes is a name"
+    },
+    {
+        "sentence": "this fri In the above sentence : ",
+        "true_ent": "fri is a day",
+        "pred_ent": "french is a food"
+    },
+    {
+        "sentence": "i am lookinge four an train that departs form cambridge on sthursdai In the above sentence : ",
+        "true_ent": "cambridge is a depart , sthursdai is a day",
+        "pred_ent": "four is a people"
+    },
+    {
+        "sentence": "is there any thing else i can help you with In the above sentence : ",
+        "true_ent": "",
+        "pred_ent": "restaurant is a food"
+    },
+    {
+        "sentence": "i'll be lving frm camb. In the above sentence : ",
+        "true_ent": "camb. is a depart",
+        "pred_ent": "camb is a name"
+    },
+    {
+        "sentence": "birmingham new st In the above sentence : ",
+        "true_ent": "birmingham new st is a dest",
+        "pred_ent": "birmingham new st is a name"
+    },
+    {
+        "sentence": "mday is wen i plan to trvl In the above sentence : ",
+        "true_ent": "mday is a day",
+        "pred_ent": "trvl is a name"
+    },
+    {
+        "sentence": "ima go from liverpol st in lundon . In the above sentence : ",
+        "true_ent": "liverpol st is a depart",
+        "pred_ent": "ima go from liverpol st is a name"
+    },
+    {
+        "sentence": "i wuld like to find a train livin cambridge on monday In the above sentence : ",
+        "true_ent": "cambridge is a depart , monday is a day",
+        "pred_ent": "train livin cambridge is a name , monday is a day"
+    },
+    {
+        "sentence": "can u get my train from cam this sun ? In the above sentence : ",
+        "true_ent": "cam is a depart , sun is a day",
+        "pred_ent": "the sun is a name"
+    },
+    {
+        "sentence": "i needs to find trein that gonna arrive in stevenage by 11:45 . In the above sentence : ",
+        "true_ent": "stevenage is a dest , 11:45 is a arrive",
+        "pred_ent": "tirin is a name"
+    },
+    {
+        "sentence": "trains leeving thu stansteeed daytim In the above sentence : ",
+        "true_ent": "thu is a day , stansteeed is a dest",
+        "pred_ent": "trains leeving thu stansteeed daytim is a name"
+    },
+    {
+        "sentence": "im lking fa train lving from norwich . In the above sentence : ",
+        "true_ent": "norwich is a depart",
+        "pred_ent": "lking fa train lving from norwich is a area"
+    },
+    {
+        "sentence": "pls help me get 2 cambs In the above sentence : ",
+        "true_ent": "cambs is a dest",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i will b departing from norwich on wednesday In the above sentence : ",
+        "true_ent": "norwich is a depart , wednesday is a day",
+        "pred_ent": "wednesday is a day"
+    },
+    {
+        "sentence": "trains from cams 2 stansted ta! In the above sentence : ",
+        "true_ent": "cams is a depart , stansted is a dest",
+        "pred_ent": "cams 2 stansted ta is a name"
+    },
+    {
+        "sentence": "well its 13:45 sunday In the above sentence : ",
+        "true_ent": "13:45 is a leave",
+        "pred_ent": "13:45 is a time"
+    },
+    {
+        "sentence": "i only need 1 2day In the above sentence : ",
+        "true_ent": "1 is a people",
+        "pred_ent": "1 is a people , 2day is a time"
+    },
+    {
+        "sentence": "actually the train i need is from cambridge to bishop stortford and not the other way round . In the above sentence : ",
+        "true_ent": "cambridge is a depart , bishop stortford is a dest",
+        "pred_ent": "bishop stortford is a name"
+    },
+    {
+        "sentence": "i'm gonna london king cross and i have to arrive before 16:45 In the above sentence : ",
+        "true_ent": "london king cross is a dest , 16:45 is a arrive",
+        "pred_ent": "london king cross is a name"
+    },
+    {
+        "sentence": "find me please any train to cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "the train is a name"
+    },
+    {
+        "sentence": "i'm lkng for train frm london on friday after 20:00 In the above sentence : ",
+        "true_ent": "london is a depart , friday is a day , 20:00 is a leave",
+        "pred_ent": "lkng is a name , frm london is a food , friday is a day , 20:00 is a time"
+    },
+    {
+        "sentence": "looking for train from cambridge In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "train from cambridge is a name"
+    },
+    {
+        "sentence": "pls tell the train details of train from cambridge on sunday In the above sentence : ",
+        "true_ent": "cambridge is a depart , sunday is a day",
+        "pred_ent": "train from cambridge is a name , sunday is a day"
+    },
+    {
+        "sentence": "plz verify it will b @ stevenage by 9 ? In the above sentence : ",
+        "true_ent": "stevenage is a dest",
+        "pred_ent": "stevenage is a food , 9 is a people"
+    },
+    {
+        "sentence": "i ned a train departing cfrom cabraineg In the above sentence : ",
+        "true_ent": "cabraineg is a depart",
+        "pred_ent": "caferaineg is a name"
+    },
+    {
+        "sentence": "will be goin to london liverpool street on sunday . In the above sentence : ",
+        "true_ent": "london liverpool street is a dest",
+        "pred_ent": "london liverpool street is a name , sunday is a day"
+    },
+    {
+        "sentence": "i wanna take a train to cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a name"
+    },
+    {
+        "sentence": "does train depart frm broxbourne station In the above sentence : ",
+        "true_ent": "broxbourne is a depart",
+        "pred_ent": "broxbourne station is a name"
+    },
+    {
+        "sentence": "sun In the above sentence : ",
+        "true_ent": "sun is a day",
+        "pred_ent": "sun is a food"
+    },
+    {
+        "sentence": "well . it would be better if leave after 13:45 from the station In the above sentence : ",
+        "true_ent": "after 13:45 is a leave",
+        "pred_ent": "13:45 is a time"
+    },
+    {
+        "sentence": "can i plz get info for a train going from cambridge 2 broxbourne ? In the above sentence : ",
+        "true_ent": "cambridge is a depart , broxbourne is a dest",
+        "pred_ent": "cambridge 2 broxbourne is a name"
+    },
+    {
+        "sentence": "1st train after 19:45 - id and $ ? In the above sentence : ",
+        "true_ent": "19:45 is a leave",
+        "pred_ent": "1st train is a people , 19:45 is a time"
+    },
+    {
+        "sentence": "i'm gonna to stansted airport by train from cambridge In the above sentence : ",
+        "true_ent": "stansted airport is a dest , cambridge is a depart",
+        "pred_ent": "stansted airport is a name"
+    },
+    {
+        "sentence": "i ned to go 2 cambridg bi train In the above sentence : ",
+        "true_ent": "cambridg is a dest",
+        "pred_ent": "2 cambridg bi train is a name"
+    },
+    {
+        "sentence": "kindly , make it possible for me to depart at 8.00 to cambridge . In the above sentence : ",
+        "true_ent": "8.00 is a leave , cambridge is a dest",
+        "pred_ent": "8.00 is a time"
+    },
+    {
+        "sentence": "please find me cambridge - norwich train In the above sentence : ",
+        "true_ent": "cambridge is a depart , norwich is a dest",
+        "pred_ent": "norwich train is a name"
+    },
+    {
+        "sentence": "i must arrive no later than 12:30 In the above sentence : ",
+        "true_ent": "12:30 is a arrive",
+        "pred_ent": "12:30 is a time"
+    },
+    {
+        "sentence": "train at 17:15 and later , please In the above sentence : ",
+        "true_ent": "17:15 is a leave",
+        "pred_ent": "17:15 is a time"
+    },
+    {
+        "sentence": "book for 2 people In the above sentence : ",
+        "true_ent": "book is a people , for is a people , 2 is a people , people is a people",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "want to depart from cambridge on monday by 12:45 . In the above sentence : ",
+        "true_ent": "cambridge is a depart , monday is a day , 12:45 is a arrive",
+        "pred_ent": "monday is a day , 12:45 is a time"
+    },
+    {
+        "sentence": "which train will b bakk by 9:15 In the above sentence : ",
+        "true_ent": "9:15 is a arrive",
+        "pred_ent": "b bakk is a name , 9:15 is a time"
+    },
+    {
+        "sentence": "can you tell me where iam . iam leaving from cambridge In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "the cambridge is a name"
+    },
+    {
+        "sentence": "i am looking 4 a train going to birmingham new street and shod leave on thurs In the above sentence : ",
+        "true_ent": "birmingham new street is a dest , thurs is a day",
+        "pred_ent": "Birmingham new street is a name"
+    },
+    {
+        "sentence": "well its from cambridge . and i should arrive there by 17:15 In the above sentence : ",
+        "true_ent": "cambridge is a depart , 17:15 is a arrive",
+        "pred_ent": "17:15 is a time"
+    },
+    {
+        "sentence": "of course . its is from cambridge to london liverpool In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "london liverpool is a name"
+    },
+    {
+        "sentence": "well it would be better if i arrive at 15:45 on tuesday at cambridge In the above sentence : ",
+        "true_ent": "tuesday is a day",
+        "pred_ent": "15:45 is a time , tuesday is a day"
+    },
+    {
+        "sentence": "i'm looking 4 train out of cambridge sat . In the above sentence : ",
+        "true_ent": "cambridge is a depart , sat is a day",
+        "pred_ent": "4 is a people"
+    },
+    {
+        "sentence": "i want 2 go 2 kingz lyn In the above sentence : ",
+        "true_ent": "kingz lyn is a dest",
+        "pred_ent": "2 is a people , kingz lyn is a name"
+    },
+    {
+        "sentence": "i need a to find a trai deprting from sansted airpor going too cambirdge In the above sentence : ",
+        "true_ent": "sansted airpor is a depart , cambirdge is a dest",
+        "pred_ent": "trui deprting from sansted airpor is a name"
+    },
+    {
+        "sentence": "i'm leaving this saturday for cambridge In the above sentence : ",
+        "true_ent": "saturday is a day , cambridge is a dest",
+        "pred_ent": "saturday is a day"
+    },
+    {
+        "sentence": "pls find my ely train In the above sentence : ",
+        "true_ent": "ely is a dest",
+        "pred_ent": "ely is a name"
+    },
+    {
+        "sentence": "4 thurs . In the above sentence : ",
+        "true_ent": "thurs is a day",
+        "pred_ent": "4 is a people"
+    },
+    {
+        "sentence": "all i neeed is too arrve by 14:15 . In the above sentence : ",
+        "true_ent": "14:15 is a arrive",
+        "pred_ent": "14:15 is a time"
+    },
+    {
+        "sentence": "ill be gng frm cambrige to broxborn In the above sentence : ",
+        "true_ent": "cambrige is a depart , broxborn is a dest",
+        "pred_ent": "broxborn is a name"
+    },
+    {
+        "sentence": "this sat In the above sentence : ",
+        "true_ent": "sat is a day",
+        "pred_ent": "center is a area"
+    },
+    {
+        "sentence": "can you tell by which train i can leave at 08:30 In the above sentence : ",
+        "true_ent": "08:30 is a leave",
+        "pred_ent": "08:30 is a time"
+    },
+    {
+        "sentence": "pls help me get train 2 norwich In the above sentence : ",
+        "true_ent": "norwich is a depart",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "the train should leave arter 17:00 and should go 2 cambridge In the above sentence : ",
+        "true_ent": "17:00 is a leave , cambridge is a dest",
+        "pred_ent": "17:00 is a time , 2 is a people"
+    },
+    {
+        "sentence": "ely 1709 friday In the above sentence : ",
+        "true_ent": "1709 is a arrive , friday is a day",
+        "pred_ent": "1709 is a time"
+    },
+    {
+        "sentence": "train from cambs after 9 ta In the above sentence : ",
+        "true_ent": "cambs is a depart",
+        "pred_ent": "9 ta is a people"
+    },
+    {
+        "sentence": "i would like to bokk a rtarin for monday departing from kikngs lynn and arrivbing at famabridge at 1445 In the above sentence : ",
+        "true_ent": "monday is a day , kikngs lynn is a depart , famabridge is a dest , 1445 is a arrive",
+        "pred_ent": "bokk a rtarin is a name , monday is a day , kikngs lynn and arrivbing is a food , famabridge at 1445 is a time"
+    },
+    {
+        "sentence": "well . may i know its arrival time In the above sentence : ",
+        "true_ent": "",
+        "pred_ent": "the day is a day"
+    },
+    {
+        "sentence": "i am looking for a locomotive to london kings cross that departs after 08:15 . In the above sentence : ",
+        "true_ent": "london kings cross is a dest , 08:15 is a leave",
+        "pred_ent": "london kings cross is a name"
+    },
+    {
+        "sentence": "i need a train no earlier 20:45 from cambridge In the above sentence : ",
+        "true_ent": "20:45 is a leave , cambridge is a depart",
+        "pred_ent": "20:45 is a time"
+    },
+    {
+        "sentence": "london , liverpool street area In the above sentence : ",
+        "true_ent": "london is a dest",
+        "pred_ent": "london is a name"
+    },
+    {
+        "sentence": "i would like 2 leave on thurs In the above sentence : ",
+        "true_ent": "thurs is a day",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i need to take a train on wednesday that leaves after 1600 In the above sentence : ",
+        "true_ent": "wednesday is a day , after 1600 is a leave",
+        "pred_ent": "wednesday is a day , 1600 is a time"
+    },
+    {
+        "sentence": "i'm gonna go to kings lynn In the above sentence : ",
+        "true_ent": "kings lynn is a dest",
+        "pred_ent": "kings lynn is a name"
+    },
+    {
+        "sentence": "it would be great if the train arrive by 9:45 In the above sentence : ",
+        "true_ent": "9:45 is a arrive",
+        "pred_ent": "9:45 is a time"
+    },
+    {
+        "sentence": "i wood lyk to leave on sudnay In the above sentence : ",
+        "true_ent": "sudnay is a day",
+        "pred_ent": "wood lyk is a name"
+    },
+    {
+        "sentence": "birmingham , new street , wednesday , please In the above sentence : ",
+        "true_ent": "birmingham is a dest , wednesday is a day",
+        "pred_ent": "birmingham is a name"
+    },
+    {
+        "sentence": "i need to get a train out of cambridge In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "the train is a name"
+    },
+    {
+        "sentence": "da train should go to stansted airport nd should arrive by 21:30 . In the above sentence : ",
+        "true_ent": "stansted airport is a dest , 21:30 is a arrive",
+        "pred_ent": "da train is a name"
+    },
+    {
+        "sentence": "i wuld like 2 leav tues In the above sentence : ",
+        "true_ent": "tues is a day",
+        "pred_ent": "2 leav tues is a name"
+    },
+    {
+        "sentence": "whichever train goes 2 stansted airportt on tuesday from cabridge arriving close to 21:30 . In the above sentence : ",
+        "true_ent": "stansted airportt is a dest , tuesday is a day , 21:30 is a arrive",
+        "pred_ent": "2 is a people , stansted airportt is a name , tuesday is a day , 21:30 is a time"
+    },
+    {
+        "sentence": "great can i book that for 8 people and get a refrence number pealse ? In the above sentence : ",
+        "true_ent": "8 is a people",
+        "pred_ent": "8 is a people , refrence number pealse is a name"
+    },
+    {
+        "sentence": "lookn 4 train In the above sentence : ",
+        "true_ent": "train is a depart",
+        "pred_ent": "4 is a people"
+    },
+    {
+        "sentence": "im lookin tgt london kings cross departing from cambridge In the above sentence : ",
+        "true_ent": "london kings cross is a dest , cambridge is a depart",
+        "pred_ent": "london kings cross is a name"
+    },
+    {
+        "sentence": "user : i am looking for a train. agent : i'd be happy to help you with that. can you tell me your departure location and where you are headed to? user : i am looking to go to london kings cross and depart from cambridge. agent : there are 70 trains making that trip, do you have a day or time ? In the above sentence : ",
+        "true_ent": "",
+        "pred_ent": "london kings cross is a name"
+    },
+    {
+        "sentence": "after 12:30 from broxbourne to cambridge In the above sentence : ",
+        "true_ent": "12:30 is a leave , broxbourne is a depart",
+        "pred_ent": "12:30 is a time"
+    },
+    {
+        "sentence": "i am lkng 4 a train to broxbourne after 15:15 . In the above sentence : ",
+        "true_ent": "broxbourne is a dest , 15:15 is a leave",
+        "pred_ent": "lkng 4 is a people , broxbourne is a name , 15:15 is a time"
+    },
+    {
+        "sentence": "pls find train at 15.15 on sunday m In the above sentence : ",
+        "true_ent": "sunday is a day",
+        "pred_ent": "15.15 is a time , sunday m is a day"
+    },
+    {
+        "sentence": "need to go to cambridge frm stevenage , after 1045 In the above sentence : ",
+        "true_ent": "cambridge is a dest , stevenage is a depart , 1045 is a leave",
+        "pred_ent": "1045 is a time"
+    },
+    {
+        "sentence": "id like a train to london liverpool st that leaves after 10 In the above sentence : ",
+        "true_ent": "london liverpool st is a dest , 10 is a leave",
+        "pred_ent": "london liverpool st is a name"
+    },
+    {
+        "sentence": "ill b leaving from cambridge fri In the above sentence : ",
+        "true_ent": "cambridge is a depart , fri is a day",
+        "pred_ent": "ill b leaving from cambridge fri In the above sentence is a name"
+    },
+    {
+        "sentence": "which train is leaving from broxbournea In the above sentence : ",
+        "true_ent": "broxbournea is a depart",
+        "pred_ent": "broxbournea is a name"
+    },
+    {
+        "sentence": "i would like head to cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a name"
+    },
+    {
+        "sentence": "no i should arrive there by 17:15 In the above sentence : ",
+        "true_ent": "17:15 is a arrive",
+        "pred_ent": "17:15 is a time"
+    },
+    {
+        "sentence": "does dat train arrive b4 17:15 In the above sentence : ",
+        "true_ent": "17:15 is a arrive",
+        "pred_ent": "17:15 is a time"
+    },
+    {
+        "sentence": "need a train to cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "the train is a name"
+    },
+    {
+        "sentence": "ely this fri In the above sentence : ",
+        "true_ent": "ely is a depart , fri is a day",
+        "pred_ent": "frank is a price"
+    },
+    {
+        "sentence": "i leave saturday am at 8:45 . In the above sentence : ",
+        "true_ent": "saturday is a day , 8:45 is a leave",
+        "pred_ent": "saturday is a day , 8:45 is a time"
+    },
+    {
+        "sentence": "schedule dictates leave cambridge on thursday at 08:45 and i wonder if you can issue a ticket for that day and time In the above sentence : ",
+        "true_ent": "thursday is a day",
+        "pred_ent": "thursday is a day , 08:45 is a time"
+    },
+    {
+        "sentence": "i need 2 leave after 2015 In the above sentence : ",
+        "true_ent": "2015 is a leave",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "nrwch 2 cmbrdg In the above sentence : ",
+        "true_ent": "nrwch is a depart , cmbrdg is a dest",
+        "pred_ent": "nrwch is a name , 2 is a people"
+    },
+    {
+        "sentence": "omg arrive in cambridge @ 14:15 In the above sentence : ",
+        "true_ent": "14:15 is a arrive",
+        "pred_ent": "14:15 is a time"
+    },
+    {
+        "sentence": "please provide me information about the trains to cambridge that leaves on friday In the above sentence : ",
+        "true_ent": "cambridge is a dest , friday is a day",
+        "pred_ent": "trains to cambridge is a name , friday is a day"
+    },
+    {
+        "sentence": "im looking for aa train from cambridge In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "a train is a name"
+    },
+    {
+        "sentence": "i have a fliht to mexico from standed airport , can you tell me hw i would ger there ? In the above sentence : ",
+        "true_ent": "standed airport is a dest",
+        "pred_ent": "mexico is a name"
+    },
+    {
+        "sentence": "id like too trvl in thrsday . In the above sentence : ",
+        "true_ent": "thrsday is a day",
+        "pred_ent": "trvl is a name"
+    },
+    {
+        "sentence": "i cant leave til after 16:15 . In the above sentence : ",
+        "true_ent": "16:15 is a leave",
+        "pred_ent": "16:15 is a time"
+    },
+    {
+        "sentence": "i'm looking for reservations for two people on the train on tuesday at 10:30 with final destination broxbourne and leaving cambridge . In the above sentence : ",
+        "true_ent": "two is a people , tuesday is a day , 10:30 is a arrive , broxbourne is a dest , cambridge is a depart",
+        "pred_ent": "two is a people , tuesday is a day , 10:30 is a time"
+    },
+    {
+        "sentence": "i am reaching their on monday at 14:15 In the above sentence : ",
+        "true_ent": "monday is a day , 14:15 is a arrive",
+        "pred_ent": "monday is a day , 14:15 is a time"
+    },
+    {
+        "sentence": "i wuld like to trvl on mon after 12:00 . In the above sentence : ",
+        "true_ent": "mon is a day , 12:00 is a leave",
+        "pred_ent": "trvl is a name"
+    },
+    {
+        "sentence": "i want 2 go 2 licester In the above sentence : ",
+        "true_ent": "licester is a dest",
+        "pred_ent": "2 is a people , 2 is a time"
+    },
+    {
+        "sentence": "nned to go to cambrid monday In the above sentence : ",
+        "true_ent": "cambrid is a dest , monday is a day",
+        "pred_ent": "monday is a day"
+    },
+    {
+        "sentence": "i to bok a train that departs from cambridge and arrives in peterbrough by 21:45 . In the above sentence : ",
+        "true_ent": "cambridge is a depart , peterbrough is a dest , 21:45 is a arrive",
+        "pred_ent": "bok a train is a name , peterbrough is a area , 21:45 is a time"
+    },
+    {
+        "sentence": "i ned a tran frum london loverpool streete station on wednasday . In the above sentence : ",
+        "true_ent": "london loverpool streete is a depart , wednasday is a day",
+        "pred_ent": "tran frum london loverpool streete is a name"
+    },
+    {
+        "sentence": "i ned to arive bye 14:45 . In the above sentence : ",
+        "true_ent": "14:45 is a arrive",
+        "pred_ent": "14:45 is a time"
+    },
+    {
+        "sentence": "i want 2 leave on weds In the above sentence : ",
+        "true_ent": "weds is a day",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "cn i fnd a train to peterborough departing frm cambridge In the above sentence : ",
+        "true_ent": "peterborough is a dest , cambridge is a depart",
+        "pred_ent": "peterborough departing frm cambridge is a name"
+    },
+    {
+        "sentence": "im going 2 kings lyn In the above sentence : ",
+        "true_ent": "lyn is a dest",
+        "pred_ent": "2 kings lyn is a name"
+    },
+    {
+        "sentence": "i'ams woood have leavd frum cambrige In the above sentence : ",
+        "true_ent": "cambrige is a depart",
+        "pred_ent": "leavd frum cambrige is a name"
+    },
+    {
+        "sentence": "the train sd leave after 10:15 + go 2 peterborogh In the above sentence : ",
+        "true_ent": "10:15 is a leave , peterborogh is a dest",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "train from da cambridge station to da ely station . In the above sentence : ",
+        "true_ent": "cambridge is a depart , ely is a dest",
+        "pred_ent": "da cambridge station is a name"
+    },
+    {
+        "sentence": "am looking 4 a train it should arrive by 1830 and should go 2 peterborough In the above sentence : ",
+        "true_ent": "1830 is a arrive , peterborough is a dest",
+        "pred_ent": "4 is a people , 1830 is a time , 2 peterborough is a name"
+    },
+    {
+        "sentence": "i need 2 leave on sun from cambride In the above sentence : ",
+        "true_ent": "sun is a day , cambride is a depart",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "im looking for train going to cambride pls In the above sentence : ",
+        "true_ent": "cambride is a dest",
+        "pred_ent": "cambride pls is a name"
+    },
+    {
+        "sentence": "i'm lookn 4 a train going 2 cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "4 is a people , 2 cambridge is a name"
+    },
+    {
+        "sentence": "user : i will be leaving from brookshite . In the above sentence : ",
+        "true_ent": "brookshite is a depart",
+        "pred_ent": "brookshite is a name"
+    },
+    {
+        "sentence": "plz get me from london liverpool street to cambridge asap . thnks In the above sentence : ",
+        "true_ent": "london liverpool street is a depart , cambridge is a dest",
+        "pred_ent": "london liverpool street is a name"
+    },
+    {
+        "sentence": "cold you tel me when the tran arives in london liverpool stret ? In the above sentence : ",
+        "true_ent": "london liverpool is a dest , stret is a dest",
+        "pred_ent": "tran arives in london liverpool stret is a name"
+    },
+    {
+        "sentence": "i actualy need 2 leave on sat In the above sentence : ",
+        "true_ent": "sat is a day",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i nd a train t thday leaving from cambridge t ely . In the above sentence : ",
+        "true_ent": "thday is a day , cambridge is a depart , ely is a dest",
+        "pred_ent": "thday is a day"
+    },
+    {
+        "sentence": "im leavin @ 545 , after that is cool In the above sentence : ",
+        "true_ent": "545 is a leave",
+        "pred_ent": "leavin is a name"
+    },
+    {
+        "sentence": "i'm am loking for a trainn from campbridge to leicester . In the above sentence : ",
+        "true_ent": "campbridge is a depart , leicester is a dest",
+        "pred_ent": "leicester is a name"
+    },
+    {
+        "sentence": "i will be leavin on monday . In the above sentence : ",
+        "true_ent": "monday is a day",
+        "pred_ent": "leavin is a name , monday is a day"
+    },
+    {
+        "sentence": "i'd lik to fiind a train to peteborough In the above sentence : ",
+        "true_ent": "peteborough is a dest",
+        "pred_ent": "peteborough is a name"
+    },
+    {
+        "sentence": "can u reserve 6 tix onteh next trai nafter 1155 ? In the above sentence : ",
+        "true_ent": "6 is a people , 1155 is a leave",
+        "pred_ent": "6 tix is a people , tix onteh is a name"
+    },
+    {
+        "sentence": "i wuold liek to leve after 9:00 on snday In the above sentence : ",
+        "true_ent": "after 9:00 is a leave , snday is a day",
+        "pred_ent": "lochk to leve is a name , 9:00 is a time"
+    },
+    {
+        "sentence": "im goin to cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a name"
+    },
+    {
+        "sentence": "i'll willl be leavin from london liverpool streeet In the above sentence : ",
+        "true_ent": "london liverpool streeet is a depart",
+        "pred_ent": "london liverpool streeet is a name"
+    },
+    {
+        "sentence": "night train after 9 , start at liverpool st In the above sentence : ",
+        "true_ent": "9 is a leave",
+        "pred_ent": "night train is a name , 9 is a people"
+    },
+    {
+        "sentence": "pls , i need to borard the train that 'll leave cmbdge and arrive in k. l. at 8am . In the above sentence : ",
+        "true_ent": "cmbdge is a depart , k. is a dest , l. is a dest",
+        "pred_ent": "k. l. is a name"
+    },
+    {
+        "sentence": "wanna get a train 2 cambridge plz In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "2 cambridge plz is a name"
+    },
+    {
+        "sentence": "leavin sun need to get thur by 13:00 In the above sentence : ",
+        "true_ent": "thur is a day , 13:00 is a arrive",
+        "pred_ent": "leavin sun is a name"
+    },
+    {
+        "sentence": "im loking for a train ging to broxbourne pleas . In the above sentence : ",
+        "true_ent": "broxbourne is a dest",
+        "pred_ent": "broxbourne pleas is a name"
+    },
+    {
+        "sentence": "i'm loking for a trane that will be gong to london kings cross on wed . In the above sentence : ",
+        "true_ent": "london kings cross is a dest , wed is a day",
+        "pred_ent": "london kings cross is a name"
+    },
+    {
+        "sentence": "i need to arive by 18:00 . In the above sentence : ",
+        "true_ent": "18:00 is a arrive",
+        "pred_ent": "18:00 is a time"
+    },
+    {
+        "sentence": "pls find a train that deaprts from peterborogh + arrives i ncambridge by 845 In the above sentence : ",
+        "true_ent": "peterborogh is a depart , ncambridge is a dest , 845 is a arrive",
+        "pred_ent": "deaprts from peterborogh is a name"
+    },
+    {
+        "sentence": "i wold like to leav on sat from lond0n liverpool stret In the above sentence : ",
+        "true_ent": "sat is a day",
+        "pred_ent": "liverpool stret is a name"
+    },
+    {
+        "sentence": "what'e the sitch on trains from cambridge to ely ? In the above sentence : ",
+        "true_ent": "cambridge is a depart , ely is a dest",
+        "pred_ent": "sitar is a name"
+    },
+    {
+        "sentence": "ineed 2 bok a train In the above sentence : ",
+        "true_ent": "train is a dest",
+        "pred_ent": "2 bok is a food"
+    },
+    {
+        "sentence": "i'm at biishops strotford and would like 2 go 2 cambridge . In the above sentence : ",
+        "true_ent": "biishops strotford is a depart , cambridge is a dest",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i wd like to travel this weds n needto leave after 815 In the above sentence : ",
+        "true_ent": "weds is a day , 815 is a leave",
+        "pred_ent": "815 is a time"
+    },
+    {
+        "sentence": "i readlly must arive by 18:15 to mkae my meting . In the above sentence : ",
+        "true_ent": "18:15 is a arrive",
+        "pred_ent": "18:15 is a time"
+    },
+    {
+        "sentence": "need a train to take 5me to cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "5me is a people"
+    },
+    {
+        "sentence": "i wud lke to lve frm stevenage on thrsdy and get to cambridge by 9:15 In the above sentence : ",
+        "true_ent": "stevenage is a depart , thrsdy is a day",
+        "pred_ent": "thrsdy is a name"
+    },
+    {
+        "sentence": "ima leave leicester n need to leave by 20:30 In the above sentence : ",
+        "true_ent": "leicester is a depart , 20:30 is a leave",
+        "pred_ent": "ima leave leicester n need to leave by 20:30 is a time"
+    },
+    {
+        "sentence": "i ned a train on tuesday out of kings lynn In the above sentence : ",
+        "true_ent": "tuesday is a day , kings lynn is a depart",
+        "pred_ent": "tuesday is a day"
+    },
+    {
+        "sentence": "train on tues at 930 from kings to cam In the above sentence : ",
+        "true_ent": "tues is a day , kings is a depart , cam is a dest",
+        "pred_ent": "930 is a time"
+    },
+    {
+        "sentence": "i need a trane out 2 london lverpool st. on saturday . In the above sentence : ",
+        "true_ent": "london lverpool st. is a dest , saturday is a day",
+        "pred_ent": "2 is a people , london lverpool st. is a name , saturday is a day"
+    },
+    {
+        "sentence": "looking to leave after 15:30 frm cambridge In the above sentence : ",
+        "true_ent": "15:30 is a leave , cambridge is a depart",
+        "pred_ent": "15:30 is a time"
+    },
+    {
+        "sentence": "i'm goin 2 cambridge In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i'll be goign to perterborough from cambrigde . In the above sentence : ",
+        "true_ent": "from is a dest , . is a depart",
+        "pred_ent": "perterborough from cambrigde is a name"
+    },
+    {
+        "sentence": "pls tell me abt train leaving after 11:45 In the above sentence : ",
+        "true_ent": "11:45 is a leave",
+        "pred_ent": "11:45 is a time"
+    },
+    {
+        "sentence": "ill be leaving stansteed airport fri 2 head twds cambridge In the above sentence : ",
+        "true_ent": "stansteed airport is a depart , fri is a day , cambridge is a dest",
+        "pred_ent": "stansteed airport is a name , 2 is a people"
+    },
+    {
+        "sentence": "the departing trane should leve after 1415 , headed 2 burmingham new st In the above sentence : ",
+        "true_ent": "1415 is a leave , burmingham new st is a dest",
+        "pred_ent": "1415 is a time , 2 burmingham new st is a name"
+    },
+    {
+        "sentence": "im loking for a train that goes 2 cambidge aruond 10:45 In the above sentence : ",
+        "true_ent": "cambidge is a dest , 10:45 is a arrive",
+        "pred_ent": "2 is a people , cambidge aruond 10:45 is a time"
+    },
+    {
+        "sentence": "you need to go by train from cambrige to noeich . In the above sentence : ",
+        "true_ent": "cambrige is a depart , noeich is a dest",
+        "pred_ent": "noeich is a name"
+    },
+    {
+        "sentence": "are there any trains leaving form cambride on thu ? In the above sentence : ",
+        "true_ent": "cambride is a depart , thu is a day",
+        "pred_ent": "thu is a name"
+    },
+    {
+        "sentence": "im heading 2 broxborn In the above sentence : ",
+        "true_ent": "broxborn is a dest",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "pls im looking the one that arrive at 3pm In the above sentence : ",
+        "true_ent": "3pm is a arrive",
+        "pred_ent": "3pm is a time"
+    },
+    {
+        "sentence": "i neid a tran to peteroborgh from cambrige on sundai . In the above sentence : ",
+        "true_ent": "peteroborgh is a dest , cambrige is a depart , sundai is a day",
+        "pred_ent": "tristan is a food , peteroborgh from cambrige is a name , sundai is a day"
+    },
+    {
+        "sentence": "i wd like 2 leve after 1815 pls In the above sentence : ",
+        "true_ent": "1815 is a leave",
+        "pred_ent": "2 is a people , 1815 is a time"
+    },
+    {
+        "sentence": "i\u2019m gonna deport from norwich In the above sentence : ",
+        "true_ent": "norwich is a depart",
+        "pred_ent": "norwich is a name"
+    },
+    {
+        "sentence": "i wd like 2 leve atfer 14:03 In the above sentence : ",
+        "true_ent": "14:03 is a leave",
+        "pred_ent": "2 is a people , 14:03 is a time"
+    },
+    {
+        "sentence": "i ned 2 book a train deprating from cabmridge after 915 In the above sentence : ",
+        "true_ent": "cabmridge is a depart",
+        "pred_ent": "2 is a people , cabmridge is a name"
+    },
+    {
+        "sentence": "i am lookin fr a train departing frm london liverpool street on thursday to go to cambridge . In the above sentence : ",
+        "true_ent": "london liverpool street is a depart , thursday is a day , cambridge is a dest",
+        "pred_ent": "london liverpool street is a name , thursday is a day"
+    },
+    {
+        "sentence": "i have to board a train to cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a name"
+    },
+    {
+        "sentence": "no , please confirm the train time comes from kings lynn . In the above sentence : ",
+        "true_ent": "kings lynn is a depart",
+        "pred_ent": "kings lynn is a name"
+    },
+    {
+        "sentence": "i wld like to get there on thur In the above sentence : ",
+        "true_ent": "thur is a day",
+        "pred_ent": "thur is a name"
+    },
+    {
+        "sentence": "id like togo after 1000 In the above sentence : ",
+        "true_ent": "1000 is a leave",
+        "pred_ent": "1000 is a people"
+    },
+    {
+        "sentence": "im looking 4 a train In the above sentence : ",
+        "true_ent": "train is a depart",
+        "pred_ent": "4 is a people"
+    },
+    {
+        "sentence": "i ned too leave thrusday frm cambredge . In the above sentence : ",
+        "true_ent": "thrusday is a day , cambredge is a depart",
+        "pred_ent": "thusday frm cambredge is a name"
+    },
+    {
+        "sentence": "trns that r ging to ptrbrgh In the above sentence : ",
+        "true_ent": "ptrbrgh is a dest",
+        "pred_ent": "ptrbrgh is a name"
+    },
+    {
+        "sentence": "i am looeking to go frim cambridg to peterborgh and leaf aftir 14:15 In the above sentence : ",
+        "true_ent": "cambridg is a depart , 14:15 is a leave",
+        "pred_ent": "peterborgh and leaf aftir 14:15 is a time"
+    },
+    {
+        "sentence": "i need a rain going 4rm stevenage 2 cambrige In the above sentence : ",
+        "true_ent": "stevenage is a depart , cambrige is a dest",
+        "pred_ent": "4rm stevenage 2 cambrige is a name"
+    },
+    {
+        "sentence": "yeah , you got any on teusday and arriving by 9:00 ? In the above sentence : ",
+        "true_ent": "teusday is a day , 9:00 is a arrive",
+        "pred_ent": "tuesday is a day , 9:00 is a time"
+    },
+    {
+        "sentence": "i wanted to leaf for cambridgeby train on wendsay In the above sentence : ",
+        "true_ent": "cambridgeby is a dest , wendsay is a day",
+        "pred_ent": "cambridgeby train is a name"
+    },
+    {
+        "sentence": "i'll b coming frm london k.c. In the above sentence : ",
+        "true_ent": "london k.c. is a depart",
+        "pred_ent": "london k.c. is a name"
+    },
+    {
+        "sentence": "need train frm london 2 kings cross In the above sentence : ",
+        "true_ent": "london is a depart",
+        "pred_ent": "london 2 kings cross is a name"
+    },
+    {
+        "sentence": "cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a name"
+    },
+    {
+        "sentence": "user : i'm leaving london liverpool street on sunday after 20:30 . In the above sentence : ",
+        "true_ent": "london liverpool street is a depart , sunday is a day , 20:30 is a leave",
+        "pred_ent": "london liverpool street is a name , sunday is a day , 20:30 is a time"
+    },
+    {
+        "sentence": "isnt there smth closer to a 20:30 departure ? In the above sentence : ",
+        "true_ent": "20:30 is a leave",
+        "pred_ent": "20:30 is a time"
+    },
+    {
+        "sentence": "does that train leave on fri ? In the above sentence : ",
+        "true_ent": "fri is a day",
+        "pred_ent": "french is a food"
+    },
+    {
+        "sentence": "tx you . In the above sentence : ",
+        "true_ent": "you is a dest",
+        "pred_ent": "tx is a name"
+    },
+    {
+        "sentence": "i ned train 2 ely fr camebrdge plz In the above sentence : ",
+        "true_ent": "ely is a depart",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "id like 2 leave on fri n arrive by 1445 In the above sentence : ",
+        "true_ent": "fri is a day , 1445 is a arrive",
+        "pred_ent": "2 is a people , frin't arrive by 1445 is a time"
+    },
+    {
+        "sentence": "stevenage; cambridge . In the above sentence : ",
+        "true_ent": "stevenage; is a depart , cambridge is a dest",
+        "pred_ent": "stevenage is a food"
+    },
+    {
+        "sentence": "i wnat 2 leave form stevenage on sat In the above sentence : ",
+        "true_ent": "stevenage is a depart , sat is a day",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i wud lke 2 leav after 12:15 In the above sentence : ",
+        "true_ent": "12:15 is a leave",
+        "pred_ent": "2 is a people , 12:15 is a time"
+    },
+    {
+        "sentence": "i wll depart aby tim as long as the trian arrives by 20:45 In the above sentence : ",
+        "true_ent": "aby is a leave , 20:45 is a arrive",
+        "pred_ent": "trian is a food"
+    },
+    {
+        "sentence": "i need 2 make a train reservatoin for fri n i need it to arriveby 1900 In the above sentence : ",
+        "true_ent": "fri is a day , 1900 is a arrive",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i wil be daparting from cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "daparting from cambridge is a name"
+    },
+    {
+        "sentence": "i will be gong 2 stanstd airport In the above sentence : ",
+        "true_ent": "stanstd airport is a dest",
+        "pred_ent": "2 is a people , stanstd airport is a name"
+    },
+    {
+        "sentence": "to cambridge and leavin london liver pool street In the above sentence : ",
+        "true_ent": "cambridge is a dest , london liver pool street is a depart",
+        "pred_ent": "leavin london liver pool street is a name"
+    },
+    {
+        "sentence": "user : i need a train to take me from cambridge to broxbourne . In the above sentence : ",
+        "true_ent": "cambridge is a depart , broxbourne is a dest",
+        "pred_ent": "broxbourne is a name"
+    },
+    {
+        "sentence": "i wll be travlling on onday In the above sentence : ",
+        "true_ent": "onday is a day",
+        "pred_ent": "travellers is a food"
+    },
+    {
+        "sentence": "lemme get a train from cambridge to bishops . In the above sentence : ",
+        "true_ent": "cambridge is a depart , bishops is a dest",
+        "pred_ent": "lemme get a name"
+    },
+    {
+        "sentence": "thur , after 20:15 . In the above sentence : ",
+        "true_ent": "thur is a day , 20:15 is a leave",
+        "pred_ent": "thurman is a name , 20:15 is a time"
+    },
+    {
+        "sentence": "i need a trian from cambrige after 9 thrusday thx In the above sentence : ",
+        "true_ent": "cambrige is a depart , 9 is a leave , thrusday is a day",
+        "pred_ent": "thx is a name"
+    },
+    {
+        "sentence": "iam loking for a train 2 cambridge on sat In the above sentence : ",
+        "true_ent": "cambridge is a dest , sat is a day",
+        "pred_ent": "2 cambridge is a name"
+    },
+    {
+        "sentence": "i'd lick to arrival at 13:45 . In the above sentence : ",
+        "true_ent": "13:45 is a arrive",
+        "pred_ent": "13:45 is a time"
+    },
+    {
+        "sentence": "i ned a train that leves on wed with an arival of 12:30 . In the above sentence : ",
+        "true_ent": "wed is a day , 12:30 is a arrive",
+        "pred_ent": "leves is a name , wednesday is a day , 12:30 is a time"
+    },
+    {
+        "sentence": "i'm travelinga frum camebridge to the londan liverpoole streete . In the above sentence : ",
+        "true_ent": "camebridge is a depart , londan liverpoole streete is a dest",
+        "pred_ent": "londan liverpoole streete is a name"
+    },
+    {
+        "sentence": "user : i'd like to find a train tuesday departing from leicester . In the above sentence : ",
+        "true_ent": "tuesday is a day , leicester is a depart",
+        "pred_ent": "tuesday is a day"
+    },
+    {
+        "sentence": "i wd like 2 leave after 1115 In the above sentence : ",
+        "true_ent": "1115 is a leave",
+        "pred_ent": "2 is a people , 1115 is a time"
+    },
+    {
+        "sentence": "yes looking 2 go from leicester 2 cambridge aftr 11:15 In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "2 is a people , leicester 2 cambridge is a name , 11:15 is a time"
+    },
+    {
+        "sentence": "id like 2 find a train from leicesster on sat In the above sentence : ",
+        "true_ent": "sat is a day",
+        "pred_ent": "leicesster is a name"
+    },
+    {
+        "sentence": "i'm gonna to cambrige and need to go after 12 In the above sentence : ",
+        "true_ent": "cambrige is a dest , 12 is a leave",
+        "pred_ent": "12 is a people"
+    },
+    {
+        "sentence": "i am looking for a train from london kings cross and leaves on wednesday In the above sentence : ",
+        "true_ent": "london kings cross is a depart , wednesday is a day",
+        "pred_ent": "london kings cross is a name , wednesday is a day"
+    },
+    {
+        "sentence": "i need a train lving frm london liverpool strt on fri . In the above sentence : ",
+        "true_ent": "london liverpool strt is a depart , fri is a day",
+        "pred_ent": "london liverpool strt is a name"
+    },
+    {
+        "sentence": "i ned to arive by 41:00 In the above sentence : ",
+        "true_ent": "41:00 is a arrive",
+        "pred_ent": "41:00 is a time"
+    },
+    {
+        "sentence": "user: excuse me , i wanna a train to cambridge , help pls ? In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "the train is a name"
+    },
+    {
+        "sentence": "i wold lik to leave on tueday and arive by 13:30 . In the above sentence : ",
+        "true_ent": "tueday is a day , 13:30 is a arrive",
+        "pred_ent": "tueday is a day , 13:30 is a time"
+    },
+    {
+        "sentence": "user : i am looking for a train on friday that leaves after 21:45 . In the above sentence : ",
+        "true_ent": "friday is a day , 21:45 is a leave",
+        "pred_ent": "friday is a day , 21:45 is a time"
+    },
+    {
+        "sentence": "i'll b lvng frm cambridge nd i wnt to go to stansted airport In the above sentence : ",
+        "true_ent": "cambridge is a depart , stansted airport is a dest",
+        "pred_ent": "stansted airport is a name"
+    },
+    {
+        "sentence": "in eed 2 leave after 2145 In the above sentence : ",
+        "true_ent": "2145 is a leave",
+        "pred_ent": "eed 2 is a people , 2145 is a time"
+    },
+    {
+        "sentence": "im deporting london kong\u2019s cross after 19:00 . In the above sentence : ",
+        "true_ent": "london kong\u2019s cross is a depart , 19:00 is a leave",
+        "pred_ent": "london kong\u2019s cross is a name , 19:00 is a time"
+    },
+    {
+        "sentence": "im looking 4 a train leaving london kings corss + arriving by 14:30 In the above sentence : ",
+        "true_ent": "kings corss + is a depart , 14:30 is a arrive",
+        "pred_ent": "4 is a people , london kings corss is a name , 14:30 is a time"
+    },
+    {
+        "sentence": "im gong 2 cambrdge In the above sentence : ",
+        "true_ent": "cambrdge is a dest",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "i'll take a booking 4 seven ppl at 10 . In the above sentence : ",
+        "true_ent": "seven is a people , 10 is a leave",
+        "pred_ent": "4 is a people , seven ppl is a time"
+    },
+    {
+        "sentence": "i wili ned 2 keave from cambridge In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "wili ned 2 is a people"
+    },
+    {
+        "sentence": "i'd like 2 travel on a thursday . In the above sentence : ",
+        "true_ent": "thursday is a day",
+        "pred_ent": "2 is a people , thursday is a day"
+    },
+    {
+        "sentence": "get ther by 17:45 pls In the above sentence : ",
+        "true_ent": "17:45 is a arrive",
+        "pred_ent": "17:45 is a time"
+    },
+    {
+        "sentence": "i wud like to catch a train leaving cambridge on sunday . In the above sentence : ",
+        "true_ent": "cambridge is a depart , sunday is a day",
+        "pred_ent": "sunday is a day"
+    },
+    {
+        "sentence": "heading too leicester plz In the above sentence : ",
+        "true_ent": "leicester is a dest",
+        "pred_ent": "leicester plz is a name"
+    },
+    {
+        "sentence": "gr8 , i want to leave after 10:15 , ok ? In the above sentence : ",
+        "true_ent": "10:15 is a leave",
+        "pred_ent": "gr8 is a people , 10:15 is a time"
+    },
+    {
+        "sentence": "im looking for a train htat leaves biships stortford and goesto cambride In the above sentence : ",
+        "true_ent": "biships stortford is a depart , cambride is a dest",
+        "pred_ent": "biships stortford and goesto cambride is a name"
+    },
+    {
+        "sentence": "'wood like t arrive in cmbridge by 8:15 In the above sentence : ",
+        "true_ent": "8:15 is a arrive",
+        "pred_ent": "wood is a food , 8:15 is a time"
+    },
+    {
+        "sentence": "i ned a train from lodon kings cros to cabridge . In the above sentence : ",
+        "true_ent": "lodon kings cros is a depart , cabridge is a dest",
+        "pred_ent": "lochon kings cros is a name"
+    },
+    {
+        "sentence": "is thr rian schdle for sudy In the above sentence : ",
+        "true_ent": "sudy is a day",
+        "pred_ent": "rian is a food"
+    },
+    {
+        "sentence": "im looking 4 trn lving from stevenage In the above sentence : ",
+        "true_ent": "stevenage is a depart",
+        "pred_ent": "4 is a people"
+    },
+    {
+        "sentence": "i need to get 2 cambrige this fri . In the above sentence : ",
+        "true_ent": "cambrige is a dest , fri is a day",
+        "pred_ent": "2 is a people"
+    },
+    {
+        "sentence": "wan2 to go a little after 13:30 . In the above sentence : ",
+        "true_ent": "13:30 is a leave",
+        "pred_ent": "wan2 is a people , 13:30 is a time"
+    }
+]
