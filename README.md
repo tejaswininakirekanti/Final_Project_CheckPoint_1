@@ -10,8 +10,7 @@ pip3 install sentence-transformers
 pip3 install nlpaug
 pip3 install datasets
 ```
-You can copy and paste the above command in your terminal to create the environment.
-
+You can copy and paste the above command in your terminal to create the environment. Make sure to change the model name and logging_path for each model.
 ## Pre-training
 ```
 bash scripts/pretrain.sh
