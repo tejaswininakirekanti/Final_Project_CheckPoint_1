@@ -1,16 +1,11 @@
-# Final_Project_CheckPoint_1
-
+# Final_Project-CS678
+Team Members : Tejaswini Nakirekanti(G01391974)
+               Murali Sai Lakith Pusarla(G01381718)
 ## Requirements Installation
 ```
-conda create -n your_env_name python=3.9
-conda activate your_env_name
-pip3 install torch==2.0.1
-pip3 install transformers==4.33.1
-pip3 install sentence-transformers
-pip3 install nlpaug
-pip3 install datasets
+pip install -r requirements.txt
 ```
-You can copy and paste the above command in your terminal to create the environment. Make sure to change the model name and logging_path for each model.
+You can copy and paste the above command in your terminal to create the environment.
 ## Pre-training
 ```
 bash scripts/pretrain.sh
@@ -38,14 +33,20 @@ Use the above command to start the training stage.
 --demons_valid_path ${valid_demons_input} \
 --demons_val_out_path ${valid_demons_output} \
 ```
-The 'add_demonstration' represents whether to add demonstrations in the training stage. If this parameter is provided, the following four data paths related to the demonstration need to be provided.
+### The 'add_demonstration' represents whether to add demonstrations in the training stage. If this parameter is provided, the following four data paths related to the demonstration need to be provided.
 
 ## Testing
 ```
 bash scripts/test.sh
 ```
+
 Use the above command to start the testing stage.
 ```
 --test_file_path ${test_path} \
 ```
 The 'test_path' represents the root directory containing the test datasets.
+
+
+## Note(Check Point 2)
+
+Make sure to update the paths according to the model and the type of data being used in the path variables associated with each script file.
