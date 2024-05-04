@@ -1,0 +1,593 @@
+2024-04-29 14:33:53 - INFO - Training arguments:
+{
+    "pretrain": false,
+    "seed": 2023,
+    "margin": 0.3,
+    "dataset": "multiwoz",
+    "training": true,
+    "testing": false,
+    "model_name_or_path": "gpt2",
+    "continue_training_path": "./models/gpt2_pretrain",
+    "model_save_path": "./models/gpt2_train_typos",
+    "force_del": true,
+    "eval_only": false,
+    "early_stop": true,
+    "train_file_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/train.txt",
+    "dev_file_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/valid/valid.txt",
+    "test_file_path": "home/tnakirek/Demo-NSF/data/multiWOZ-new/test",
+    "dropout": 0.1,
+    "batch_size": 8,
+    "eval_batch_size": 16,
+    "num_epochs": 1,
+    "learning_rate": 5e-05,
+    "evaluation_steps": 500,
+    "max_seq_length": 256,
+    "num": 2,
+    "decode_max_seq_length": 256,
+    "gradient_clip": 1.0,
+    "patience": null,
+    "metric": "f1",
+    "clean_train_path": null,
+    "noise_train_path": null,
+    "clean_dev_path": null,
+    "noise_dev_path": null,
+    "eval_loss": 0.2,
+    "auxiliary_without_eval": false,
+    "logging_file_path": "/models/gpt2_train_typos",
+    "add_demonstration": true,
+    "demons_train_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/typos/equal_demons1.in",
+    "demons_out_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/train/typos/equal_demons1.out",
+    "demons_valid_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/valid/equal_demons1.in",
+    "demons_val_out_path": "/home/tnakirek/Demo-NSF/data/multiWOZ-new/valid/equal_demons1.out",
+    "mask_output_path": null,
+    "mask_input_path": null,
+    "classify_output_path": null,
+    "classify_input_path": null,
+    "clean_path": null,
+    "noise_path": null
+}
+2024-04-29 14:33:53 - INFO - Run experiments with random seed: 2023
+2024-04-29 14:33:53 - INFO - Saved training command to file: ./models/gpt2_train_typos/command.txt
+2024-04-29 14:33:53 - INFO - Saved training arguments to file: ./models/gpt2_train_typos/args.json
+2024-04-29 14:34:01 - INFO - Reading train split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/train/train.txt
+2024-04-29 14:34:03 - INFO - Number of samples: total=56117
+2024-04-29 14:34:03 - INFO - O=727044 (1295.59%)
+2024-04-29 14:34:03 - INFO - B-area=10836 (19.31%)
+2024-04-29 14:34:03 - INFO - B-type=8465 (15.08%)
+2024-04-29 14:34:03 - INFO - B-name=5522 (9.84%)
+2024-04-29 14:34:03 - INFO - I-name=7931 (14.13%)
+2024-04-29 14:34:03 - INFO - I-area=1794 (3.20%)
+2024-04-29 14:34:03 - INFO - I-type=529 (0.94%)
+2024-04-29 14:34:03 - INFO - B-price=6393 (11.39%)
+2024-04-29 14:34:03 - INFO - B-people=11137 (19.85%)
+2024-04-29 14:34:03 - INFO - B-stay=4969 (8.85%)
+2024-04-29 14:34:03 - INFO - B-day=14055 (25.05%)
+2024-04-29 14:34:03 - INFO - B-stars=3769 (6.72%)
+2024-04-29 14:34:03 - INFO - I-people=687 (1.22%)
+2024-04-29 14:34:03 - INFO - I-price=936 (1.67%)
+2024-04-29 14:34:03 - INFO - I-day=489 (0.87%)
+2024-04-29 14:34:03 - INFO - B-food=5274 (9.40%)
+2024-04-29 14:34:03 - INFO - B-time=4443 (7.92%)
+2024-04-29 14:34:03 - INFO - I-food=894 (1.59%)
+2024-04-29 14:34:03 - INFO - I-time=5 (0.01%)
+2024-04-29 14:34:03 - INFO - B-dest=5826 (10.38%)
+2024-04-29 14:34:03 - INFO - B-arrive=3194 (5.69%)
+2024-04-29 14:34:03 - INFO - B-depart=5724 (10.20%)
+2024-04-29 14:34:03 - INFO - I-depart=2095 (3.73%)
+2024-04-29 14:34:03 - INFO - B-leave=3000 (5.35%)
+2024-04-29 14:34:03 - INFO - I-dest=2072 (3.69%)
+2024-04-29 14:34:03 - INFO - I-leave=251 (0.45%)
+2024-04-29 14:34:03 - INFO - I-arrive=58 (0.10%)
+2024-04-29 14:34:03 - INFO - Reading dev split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/valid/valid.txt
+2024-04-29 14:34:03 - INFO - Number of samples: total=5000
+2024-04-29 14:34:03 - INFO - O=63925 (1278.50%)
+2024-04-29 14:34:03 - INFO - B-leave=287 (5.74%)
+2024-04-29 14:34:03 - INFO - B-dest=584 (11.68%)
+2024-04-29 14:34:03 - INFO - B-people=1001 (20.02%)
+2024-04-29 14:34:03 - INFO - B-stay=418 (8.36%)
+2024-04-29 14:34:03 - INFO - B-day=1263 (25.26%)
+2024-04-29 14:34:03 - INFO - I-leave=20 (0.40%)
+2024-04-29 14:34:03 - INFO - B-price=523 (10.46%)
+2024-04-29 14:34:03 - INFO - B-area=873 (17.46%)
+2024-04-29 14:34:03 - INFO - I-area=140 (2.80%)
+2024-04-29 14:34:03 - INFO - B-depart=573 (11.46%)
+2024-04-29 14:34:03 - INFO - B-stars=299 (5.98%)
+2024-04-29 14:34:03 - INFO - B-type=686 (13.72%)
+2024-04-29 14:34:03 - INFO - B-name=532 (10.64%)
+2024-04-29 14:34:03 - INFO - I-name=822 (16.44%)
+2024-04-29 14:34:03 - INFO - B-food=429 (8.58%)
+2024-04-29 14:34:03 - INFO - B-time=398 (7.96%)
+2024-04-29 14:34:03 - INFO - I-day=57 (1.14%)
+2024-04-29 14:34:03 - INFO - B-arrive=332 (6.64%)
+2024-04-29 14:34:03 - INFO - I-depart=239 (4.78%)
+2024-04-29 14:34:03 - INFO - I-people=81 (1.62%)
+2024-04-29 14:34:03 - INFO - I-dest=211 (4.22%)
+2024-04-29 14:34:03 - INFO - I-type=41 (0.82%)
+2024-04-29 14:34:03 - INFO - I-food=69 (1.38%)
+2024-04-29 14:34:03 - INFO - I-price=66 (1.32%)
+2024-04-29 14:34:03 - INFO - I-arrive=2 (0.04%)
+2024-04-29 14:34:03 - INFO - Start training, number of epochs: 1
+2024-04-29 14:34:03 - INFO - Training start for epoch 0
+2024-04-29 14:34:03 - INFO - Total number of batches: 7015
+2024-04-29 14:35:08 - INFO - Evaluating on dev dataset at step 498 in epoch 0 (global step: 499)...
+2024-04-29 14:37:17 - INFO - Dev Results: precision = 0.7650
+2024-04-29 14:37:17 - INFO - Dev Results: recall = 0.7964
+2024-04-29 14:37:17 - INFO - Dev Results: f1 = 0.7804
+2024-04-29 14:37:17 - INFO - Dev Results: span_precision = 0.9458
+2024-04-29 14:37:17 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:37:17 - INFO - Dev Results: span_f1 = 0.9676
+2024-04-29 14:37:17 - INFO - Dev Results: exact_match = 0.6324
+2024-04-29 14:37:17 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 14:38:24 - INFO - Evaluating on dev dataset at step 998 in epoch 0 (global step: 999)...
+2024-04-29 14:41:21 - INFO - Dev Results: precision = 0.7119
+2024-04-29 14:41:21 - INFO - Dev Results: recall = 0.9157
+2024-04-29 14:41:21 - INFO - Dev Results: f1 = 0.8010
+2024-04-29 14:41:21 - INFO - Dev Results: span_precision = 0.8205
+2024-04-29 14:41:21 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:41:21 - INFO - Dev Results: span_f1 = 0.8975
+2024-04-29 14:41:21 - INFO - Dev Results: exact_match = 0.5382
+2024-04-29 14:41:21 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 14:42:31 - INFO - Evaluating on dev dataset at step 1498 in epoch 0 (global step: 1499)...
+2024-04-29 14:44:15 - INFO - Dev Results: precision = 0.8401
+2024-04-29 14:44:15 - INFO - Dev Results: recall = 0.9349
+2024-04-29 14:44:15 - INFO - Dev Results: f1 = 0.8849
+2024-04-29 14:44:15 - INFO - Dev Results: span_precision = 0.9162
+2024-04-29 14:44:15 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:44:15 - INFO - Dev Results: span_f1 = 0.9519
+2024-04-29 14:44:15 - INFO - Dev Results: exact_match = 0.7420
+2024-04-29 14:44:15 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 14:45:24 - INFO - Evaluating on dev dataset at step 1998 in epoch 0 (global step: 1999)...
+2024-04-29 14:47:03 - INFO - Dev Results: precision = 0.9353
+2024-04-29 14:47:03 - INFO - Dev Results: recall = 0.9704
+2024-04-29 14:47:03 - INFO - Dev Results: f1 = 0.9525
+2024-04-29 14:47:03 - INFO - Dev Results: span_precision = 0.9569
+2024-04-29 14:47:03 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:47:03 - INFO - Dev Results: span_f1 = 0.9734
+2024-04-29 14:47:03 - INFO - Dev Results: exact_match = 0.8998
+2024-04-29 14:47:03 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 14:48:13 - INFO - Evaluating on dev dataset at step 2498 in epoch 0 (global step: 2499)...
+2024-04-29 14:50:03 - INFO - Dev Results: precision = 0.9208
+2024-04-29 14:50:03 - INFO - Dev Results: recall = 0.9732
+2024-04-29 14:50:03 - INFO - Dev Results: f1 = 0.9463
+2024-04-29 14:50:03 - INFO - Dev Results: span_precision = 0.9427
+2024-04-29 14:50:03 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:50:03 - INFO - Dev Results: span_f1 = 0.9660
+2024-04-29 14:50:03 - INFO - Dev Results: exact_match = 0.8764
+2024-04-29 14:51:12 - INFO - Evaluating on dev dataset at step 2998 in epoch 0 (global step: 2999)...
+2024-04-29 14:53:08 - INFO - Dev Results: precision = 0.9055
+2024-04-29 14:53:08 - INFO - Dev Results: recall = 0.9571
+2024-04-29 14:53:08 - INFO - Dev Results: f1 = 0.9306
+2024-04-29 14:53:08 - INFO - Dev Results: span_precision = 0.9392
+2024-04-29 14:53:08 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:53:08 - INFO - Dev Results: span_f1 = 0.9641
+2024-04-29 14:53:08 - INFO - Dev Results: exact_match = 0.8518
+2024-04-29 14:54:17 - INFO - Evaluating on dev dataset at step 3498 in epoch 0 (global step: 3499)...
+2024-04-29 14:56:06 - INFO - Dev Results: precision = 0.9177
+2024-04-29 14:56:06 - INFO - Dev Results: recall = 0.9673
+2024-04-29 14:56:06 - INFO - Dev Results: f1 = 0.9419
+2024-04-29 14:56:06 - INFO - Dev Results: span_precision = 0.9415
+2024-04-29 14:56:06 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:56:06 - INFO - Dev Results: span_f1 = 0.9654
+2024-04-29 14:56:06 - INFO - Dev Results: exact_match = 0.8694
+2024-04-29 14:57:15 - INFO - Evaluating on dev dataset at step 3998 in epoch 0 (global step: 3999)...
+2024-04-29 14:59:03 - INFO - Dev Results: precision = 0.9250
+2024-04-29 14:59:03 - INFO - Dev Results: recall = 0.9768
+2024-04-29 14:59:03 - INFO - Dev Results: f1 = 0.9502
+2024-04-29 14:59:03 - INFO - Dev Results: span_precision = 0.9393
+2024-04-29 14:59:03 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 14:59:03 - INFO - Dev Results: span_f1 = 0.9642
+2024-04-29 14:59:03 - INFO - Dev Results: exact_match = 0.8804
+2024-04-29 15:00:09 - INFO - Evaluating on dev dataset at step 4498 in epoch 0 (global step: 4499)...
+2024-04-29 15:02:13 - INFO - Dev Results: precision = 0.9201
+2024-04-29 15:02:13 - INFO - Dev Results: recall = 0.9905
+2024-04-29 15:02:13 - INFO - Dev Results: f1 = 0.9540
+2024-04-29 15:02:13 - INFO - Dev Results: span_precision = 0.9262
+2024-04-29 15:02:13 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 15:02:13 - INFO - Dev Results: span_f1 = 0.9572
+2024-04-29 15:02:13 - INFO - Dev Results: exact_match = 0.8770
+2024-04-29 15:02:13 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 15:03:18 - INFO - Evaluating on dev dataset at step 4998 in epoch 0 (global step: 4999)...
+2024-04-29 15:04:57 - INFO - Dev Results: precision = 0.9543
+2024-04-29 15:04:57 - INFO - Dev Results: recall = 0.9905
+2024-04-29 15:04:57 - INFO - Dev Results: f1 = 0.9720
+2024-04-29 15:04:57 - INFO - Dev Results: span_precision = 0.9536
+2024-04-29 15:04:57 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 15:04:57 - INFO - Dev Results: span_f1 = 0.9717
+2024-04-29 15:04:57 - INFO - Dev Results: exact_match = 0.9254
+2024-04-29 15:04:57 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 15:06:02 - INFO - Evaluating on dev dataset at step 5498 in epoch 0 (global step: 5499)...
+2024-04-29 15:07:37 - INFO - Dev Results: precision = 0.9598
+2024-04-29 15:07:37 - INFO - Dev Results: recall = 0.9905
+2024-04-29 15:07:37 - INFO - Dev Results: f1 = 0.9749
+2024-04-29 15:07:37 - INFO - Dev Results: span_precision = 0.9586
+2024-04-29 15:07:37 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 15:07:37 - INFO - Dev Results: span_f1 = 0.9743
+2024-04-29 15:07:37 - INFO - Dev Results: exact_match = 0.9332
+2024-04-29 15:07:37 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 15:08:42 - INFO - Evaluating on dev dataset at step 5998 in epoch 0 (global step: 5999)...
+2024-04-29 15:10:27 - INFO - Dev Results: precision = 0.9551
+2024-04-29 15:10:27 - INFO - Dev Results: recall = 0.9905
+2024-04-29 15:10:27 - INFO - Dev Results: f1 = 0.9725
+2024-04-29 15:10:27 - INFO - Dev Results: span_precision = 0.9544
+2024-04-29 15:10:27 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 15:10:27 - INFO - Dev Results: span_f1 = 0.9721
+2024-04-29 15:10:27 - INFO - Dev Results: exact_match = 0.9266
+2024-04-29 15:11:34 - INFO - Evaluating on dev dataset at step 6498 in epoch 0 (global step: 6499)...
+2024-04-29 15:13:12 - INFO - Dev Results: precision = 0.9617
+2024-04-29 15:13:12 - INFO - Dev Results: recall = 0.9905
+2024-04-29 15:13:12 - INFO - Dev Results: f1 = 0.9759
+2024-04-29 15:13:12 - INFO - Dev Results: span_precision = 0.9613
+2024-04-29 15:13:12 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 15:13:12 - INFO - Dev Results: span_f1 = 0.9757
+2024-04-29 15:13:12 - INFO - Dev Results: exact_match = 0.9384
+2024-04-29 15:13:12 - INFO - Best performance achieved, epoch=0, save model to ./models/gpt2_train_typos/pytorch_model.bin
+2024-04-29 15:14:19 - INFO - Evaluating on dev dataset at step 6998 in epoch 0 (global step: 6999)...
+2024-04-29 15:16:20 - INFO - Dev Results: precision = 0.9417
+2024-04-29 15:16:20 - INFO - Dev Results: recall = 0.9905
+2024-04-29 15:16:20 - INFO - Dev Results: f1 = 0.9655
+2024-04-29 15:16:20 - INFO - Dev Results: span_precision = 0.9433
+2024-04-29 15:16:20 - INFO - Dev Results: span_recall = 0.9904
+2024-04-29 15:16:20 - INFO - Dev Results: span_f1 = 0.9663
+2024-04-29 15:16:20 - INFO - Dev Results: exact_match = 0.9084
+2024-04-29 16:28:26 - INFO - Run experiments with random seed: 2023
+2024-04-29 16:28:30 - INFO - Evaluation on clean test dataset...
+2024-04-29 16:28:30 - INFO - Reading clean split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/clean_test/test.txt
+2024-04-29 16:28:30 - INFO - Number of samples: total=306
+2024-04-29 16:28:30 - INFO - O=2574 (841.18%)
+2024-04-29 16:28:30 - INFO - B-day=109 (35.62%)
+2024-04-29 16:28:30 - INFO - B-arrive=48 (15.69%)
+2024-04-29 16:28:30 - INFO - B-depart=109 (35.62%)
+2024-04-29 16:28:30 - INFO - B-people=30 (9.80%)
+2024-04-29 16:28:30 - INFO - I-depart=45 (14.71%)
+2024-04-29 16:28:30 - INFO - B-leave=59 (19.28%)
+2024-04-29 16:28:30 - INFO - B-dest=114 (37.25%)
+2024-04-29 16:28:30 - INFO - I-dest=49 (16.01%)
+2024-04-29 16:28:30 - INFO - I-leave=3 (0.98%)
+2024-04-29 16:28:38 - INFO - Clean test Results: precision = 0.9771
+2024-04-29 16:28:38 - INFO - Clean test Results: recall = 1.0000
+2024-04-29 16:28:38 - INFO - Clean test Results: f1 = 0.9884
+2024-04-29 16:28:38 - INFO - Clean test Results: span_precision = 0.9771
+2024-04-29 16:28:38 - INFO - Clean test Results: span_recall = 1.0000
+2024-04-29 16:28:38 - INFO - Clean test Results: span_f1 = 0.9884
+2024-04-29 16:28:38 - INFO - Clean test Results: exact_match = 0.9641
+2024-04-29 16:28:38 - INFO - Reading verbose split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/verbose/test.txt
+2024-04-29 16:28:38 - INFO - Number of samples: total=298
+2024-04-29 16:28:38 - INFO - O=3710 (1244.97%)
+2024-04-29 16:28:38 - INFO - B-day=104 (34.90%)
+2024-04-29 16:28:38 - INFO - B-arrive=45 (15.10%)
+2024-04-29 16:28:38 - INFO - B-depart=105 (35.23%)
+2024-04-29 16:28:38 - INFO - B-people=31 (10.40%)
+2024-04-29 16:28:38 - INFO - I-depart=42 (14.09%)
+2024-04-29 16:28:38 - INFO - B-leave=54 (18.12%)
+2024-04-29 16:28:38 - INFO - I-leave=14 (4.70%)
+2024-04-29 16:28:38 - INFO - B-dest=109 (36.58%)
+2024-04-29 16:28:38 - INFO - I-dest=48 (16.11%)
+2024-04-29 16:28:38 - INFO - I-arrive=3 (1.01%)
+2024-04-29 16:28:38 - INFO - Evaluation on verbose test dataset...
+2024-04-29 16:28:42 - INFO - Verbose test Results: precision = 0.8745
+2024-04-29 16:28:42 - INFO - Verbose test Results: recall = 1.0000
+2024-04-29 16:28:42 - INFO - Verbose test Results: f1 = 0.9331
+2024-04-29 16:28:42 - INFO - Verbose test Results: span_precision = 0.8745
+2024-04-29 16:28:42 - INFO - Verbose test Results: span_recall = 1.0000
+2024-04-29 16:28:42 - INFO - Verbose test Results: span_f1 = 0.9331
+2024-04-29 16:28:42 - INFO - Verbose test Results: exact_match = 0.8188
+2024-04-29 16:28:42 - INFO - Reading paraphrase split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/paraphrase/test.txt
+2024-04-29 16:28:42 - INFO - Number of samples: total=306
+2024-04-29 16:28:42 - INFO - O=2280 (745.10%)
+2024-04-29 16:28:42 - INFO - B-day=107 (34.97%)
+2024-04-29 16:28:42 - INFO - B-arrive=47 (15.36%)
+2024-04-29 16:28:42 - INFO - B-depart=108 (35.29%)
+2024-04-29 16:28:42 - INFO - B-people=29 (9.48%)
+2024-04-29 16:28:42 - INFO - I-depart=38 (12.42%)
+2024-04-29 16:28:42 - INFO - B-leave=55 (17.97%)
+2024-04-29 16:28:42 - INFO - B-dest=109 (35.62%)
+2024-04-29 16:28:42 - INFO - I-dest=45 (14.71%)
+2024-04-29 16:28:42 - INFO - I-leave=6 (1.96%)
+2024-04-29 16:28:42 - INFO - Evaluation on paraphrase test dataset...
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: precision = 0.9619
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: recall = 1.0000
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: f1 = 0.9806
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: span_precision = 0.9619
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: span_recall = 1.0000
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: span_f1 = 0.9806
+2024-04-29 16:28:49 - INFO - Paraphrase test Results: exact_match = 0.9477
+2024-04-29 16:28:49 - INFO - Reading typos split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/typos/test.txt
+2024-04-29 16:28:49 - INFO - Number of samples: total=301
+2024-04-29 16:28:49 - INFO - O=2160 (717.61%)
+2024-04-29 16:28:49 - INFO - B-day=102 (33.89%)
+2024-04-29 16:28:49 - INFO - B-arrive=45 (14.95%)
+2024-04-29 16:28:49 - INFO - B-depart=107 (35.55%)
+2024-04-29 16:28:49 - INFO - B-people=33 (10.96%)
+2024-04-29 16:28:49 - INFO - I-depart=41 (13.62%)
+2024-04-29 16:28:49 - INFO - B-leave=53 (17.61%)
+2024-04-29 16:28:49 - INFO - B-dest=108 (35.88%)
+2024-04-29 16:28:49 - INFO - I-dest=39 (12.96%)
+2024-04-29 16:28:49 - INFO - I-leave=3 (1.00%)
+2024-04-29 16:28:49 - INFO - Evaluation on typos test dataset...
+2024-04-29 16:28:56 - INFO - Typos test Results: precision = 0.9510
+2024-04-29 16:28:56 - INFO - Typos test Results: recall = 0.9955
+2024-04-29 16:28:56 - INFO - Typos test Results: f1 = 0.9727
+2024-04-29 16:28:56 - INFO - Typos test Results: span_precision = 0.9469
+2024-04-29 16:28:56 - INFO - Typos test Results: span_recall = 0.9955
+2024-04-29 16:28:56 - INFO - Typos test Results: span_f1 = 0.9706
+2024-04-29 16:28:56 - INFO - Typos test Results: exact_match = 0.9269
+2024-04-29 16:28:56 - INFO - Reading simplify split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/simplify/test.txt
+2024-04-29 16:28:56 - INFO - Number of samples: total=298
+2024-04-29 16:28:56 - INFO - O=1221 (409.73%)
+2024-04-29 16:28:56 - INFO - B-day=101 (33.89%)
+2024-04-29 16:28:56 - INFO - B-arrive=43 (14.43%)
+2024-04-29 16:28:56 - INFO - B-depart=102 (34.23%)
+2024-04-29 16:28:56 - INFO - B-people=30 (10.07%)
+2024-04-29 16:28:56 - INFO - I-depart=35 (11.74%)
+2024-04-29 16:28:56 - INFO - B-leave=53 (17.79%)
+2024-04-29 16:28:56 - INFO - B-dest=104 (34.90%)
+2024-04-29 16:28:56 - INFO - I-dest=37 (12.42%)
+2024-04-29 16:28:56 - INFO - I-leave=5 (1.68%)
+2024-04-29 16:28:56 - INFO - Evaluation on simplify test dataset...
+2024-04-29 16:29:05 - INFO - Simplify test Results: precision = 0.9665
+2024-04-29 16:29:05 - INFO - Simplify test Results: recall = 1.0000
+2024-04-29 16:29:05 - INFO - Simplify test Results: f1 = 0.9830
+2024-04-29 16:29:05 - INFO - Simplify test Results: span_precision = 0.9665
+2024-04-29 16:29:05 - INFO - Simplify test Results: span_recall = 1.0000
+2024-04-29 16:29:05 - INFO - Simplify test Results: span_f1 = 0.9830
+2024-04-29 16:29:05 - INFO - Simplify test Results: exact_match = 0.9497
+2024-04-29 16:29:05 - INFO - Reading speech split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/speech/test.txt
+2024-04-29 16:29:05 - INFO - Number of samples: total=307
+2024-04-29 16:29:05 - INFO - O=2388 (777.85%)
+2024-04-29 16:29:05 - INFO - B-day=107 (34.85%)
+2024-04-29 16:29:05 - INFO - B-arrive=50 (16.29%)
+2024-04-29 16:29:05 - INFO - I-arrive=55 (17.92%)
+2024-04-29 16:29:05 - INFO - B-depart=108 (35.18%)
+2024-04-29 16:29:05 - INFO - I-depart=56 (18.24%)
+2024-04-29 16:29:05 - INFO - B-people=30 (9.77%)
+2024-04-29 16:29:05 - INFO - B-leave=59 (19.22%)
+2024-04-29 16:29:05 - INFO - I-leave=68 (22.15%)
+2024-04-29 16:29:05 - INFO - B-dest=115 (37.46%)
+2024-04-29 16:29:05 - INFO - I-dest=62 (20.20%)
+2024-04-29 16:29:05 - INFO - Evaluation on speech test dataset...
+2024-04-29 16:29:10 - INFO - Speech test Results: precision = 0.9710
+2024-04-29 16:29:10 - INFO - Speech test Results: recall = 0.9979
+2024-04-29 16:29:10 - INFO - Speech test Results: f1 = 0.9842
+2024-04-29 16:29:10 - INFO - Speech test Results: span_precision = 0.9710
+2024-04-29 16:29:10 - INFO - Speech test Results: span_recall = 0.9979
+2024-04-29 16:29:10 - INFO - Speech test Results: span_f1 = 0.9842
+2024-04-29 16:29:10 - INFO - Speech test Results: exact_match = 0.9544
+2024-04-29 16:29:10 - INFO - Reading negation split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/negation/test.txt
+2024-04-29 16:29:10 - INFO - Number of samples: total=183
+2024-04-29 16:29:10 - INFO - O=1830 (1000.00%)
+2024-04-29 16:29:10 - INFO - B-dest=67 (36.61%)
+2024-04-29 16:29:10 - INFO - B-leave=38 (20.77%)
+2024-04-29 16:29:10 - INFO - I-leave=2 (1.09%)
+2024-04-29 16:29:10 - INFO - B-day=67 (36.61%)
+2024-04-29 16:29:10 - INFO - B-depart=70 (38.25%)
+2024-04-29 16:29:10 - INFO - I-depart=29 (15.85%)
+2024-04-29 16:29:10 - INFO - B-people=12 (6.56%)
+2024-04-29 16:29:10 - INFO - I-dest=32 (17.49%)
+2024-04-29 16:29:10 - INFO - B-arrive=28 (15.30%)
+2024-04-29 16:29:10 - INFO - Evaluation on negation test dataset...
+2024-04-29 16:29:14 - INFO - Negation test Results: precision = 0.9758
+2024-04-29 16:29:14 - INFO - Negation test Results: recall = 1.0000
+2024-04-29 16:29:14 - INFO - Negation test Results: f1 = 0.9877
+2024-04-29 16:29:14 - INFO - Negation test Results: span_precision = 0.9758
+2024-04-29 16:29:14 - INFO - Negation test Results: span_recall = 1.0000
+2024-04-29 16:29:14 - INFO - Negation test Results: span_f1 = 0.9877
+2024-04-29 16:29:14 - INFO - Negation test Results: exact_match = 0.9617
+2024-04-29 16:29:14 - INFO - Reading contraction split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/contractions/test.txt
+2024-04-29 16:29:14 - INFO - Number of samples: total=111
+2024-04-29 16:29:14 - INFO - O=995 (896.40%)
+2024-04-29 16:29:14 - INFO - B-depart=43 (38.74%)
+2024-04-29 16:29:14 - INFO - I-depart=18 (16.22%)
+2024-04-29 16:29:14 - INFO - B-leave=27 (24.32%)
+2024-04-29 16:29:14 - INFO - B-dest=31 (27.93%)
+2024-04-29 16:29:14 - INFO - B-day=48 (43.24%)
+2024-04-29 16:29:14 - INFO - B-people=5 (4.50%)
+2024-04-29 16:29:14 - INFO - I-dest=14 (12.61%)
+2024-04-29 16:29:14 - INFO - B-arrive=17 (15.32%)
+2024-04-29 16:29:14 - INFO - I-leave=2 (1.80%)
+2024-04-29 16:29:14 - INFO - Evaluation on contraction test dataset...
+2024-04-29 16:29:15 - INFO - Contraction test Results: precision = 0.9661
+2024-04-29 16:29:15 - INFO - Contraction test Results: recall = 1.0000
+2024-04-29 16:29:15 - INFO - Contraction test Results: f1 = 0.9828
+2024-04-29 16:29:15 - INFO - Contraction test Results: span_precision = 0.9661
+2024-04-29 16:29:15 - INFO - Contraction test Results: span_recall = 1.0000
+2024-04-29 16:29:15 - INFO - Contraction test Results: span_f1 = 0.9828
+2024-04-29 16:29:15 - INFO - Contraction test Results: exact_match = 0.9459
+2024-04-29 16:29:15 - INFO - Reading expansion split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/expansions/test.txt
+2024-04-29 16:29:15 - INFO - Number of samples: total=50
+2024-04-29 16:29:15 - INFO - O=437 (874.00%)
+2024-04-29 16:29:15 - INFO - B-day=18 (36.00%)
+2024-04-29 16:29:15 - INFO - B-arrive=6 (12.00%)
+2024-04-29 16:29:15 - INFO - B-depart=24 (48.00%)
+2024-04-29 16:29:15 - INFO - B-leave=8 (16.00%)
+2024-04-29 16:29:15 - INFO - B-dest=27 (54.00%)
+2024-04-29 16:29:15 - INFO - I-dest=13 (26.00%)
+2024-04-29 16:29:15 - INFO - I-depart=10 (20.00%)
+2024-04-29 16:29:15 - INFO - Evaluation on expansion test dataset...
+2024-04-29 16:29:16 - INFO - expansion test Results: precision = 0.9881
+2024-04-29 16:29:16 - INFO - expansion test Results: recall = 1.0000
+2024-04-29 16:29:16 - INFO - expansion test Results: f1 = 0.9940
+2024-04-29 16:29:16 - INFO - expansion test Results: span_precision = 0.9881
+2024-04-29 16:29:16 - INFO - expansion test Results: span_recall = 1.0000
+2024-04-29 16:29:16 - INFO - expansion test Results: span_f1 = 0.9940
+2024-04-29 16:29:16 - INFO - expansion test Results: exact_match = 0.9800
+2024-05-03 17:35:21 - INFO - Run experiments with random seed: 2023
+2024-05-03 17:35:23 - INFO - Evaluation on clean test dataset...
+2024-05-03 17:35:23 - INFO - Reading clean split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/clean_test/test.txt
+2024-05-03 17:35:23 - INFO - Number of samples: total=306
+2024-05-03 17:35:23 - INFO - O=2574 (841.18%)
+2024-05-03 17:35:23 - INFO - B-day=109 (35.62%)
+2024-05-03 17:35:23 - INFO - B-arrive=48 (15.69%)
+2024-05-03 17:35:23 - INFO - B-depart=109 (35.62%)
+2024-05-03 17:35:23 - INFO - B-people=30 (9.80%)
+2024-05-03 17:35:23 - INFO - I-depart=45 (14.71%)
+2024-05-03 17:35:23 - INFO - B-leave=59 (19.28%)
+2024-05-03 17:35:23 - INFO - B-dest=114 (37.25%)
+2024-05-03 17:35:23 - INFO - I-dest=49 (16.01%)
+2024-05-03 17:35:23 - INFO - I-leave=3 (0.98%)
+2024-05-03 17:35:29 - INFO - Clean test Results: precision = 0.9771
+2024-05-03 17:35:29 - INFO - Clean test Results: recall = 1.0000
+2024-05-03 17:35:29 - INFO - Clean test Results: f1 = 0.9884
+2024-05-03 17:35:29 - INFO - Clean test Results: span_precision = 0.9771
+2024-05-03 17:35:29 - INFO - Clean test Results: span_recall = 1.0000
+2024-05-03 17:35:29 - INFO - Clean test Results: span_f1 = 0.9884
+2024-05-03 17:35:29 - INFO - Clean test Results: exact_match = 0.9641
+2024-05-03 17:35:29 - INFO - Reading verbose split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/verbose/test.txt
+2024-05-03 17:35:29 - INFO - Number of samples: total=298
+2024-05-03 17:35:29 - INFO - O=3710 (1244.97%)
+2024-05-03 17:35:29 - INFO - B-day=104 (34.90%)
+2024-05-03 17:35:29 - INFO - B-arrive=45 (15.10%)
+2024-05-03 17:35:29 - INFO - B-depart=105 (35.23%)
+2024-05-03 17:35:29 - INFO - B-people=31 (10.40%)
+2024-05-03 17:35:29 - INFO - I-depart=42 (14.09%)
+2024-05-03 17:35:29 - INFO - B-leave=54 (18.12%)
+2024-05-03 17:35:29 - INFO - I-leave=14 (4.70%)
+2024-05-03 17:35:29 - INFO - B-dest=109 (36.58%)
+2024-05-03 17:35:29 - INFO - I-dest=48 (16.11%)
+2024-05-03 17:35:29 - INFO - I-arrive=3 (1.01%)
+2024-05-03 17:35:29 - INFO - Evaluation on verbose test dataset...
+2024-05-03 17:35:34 - INFO - Verbose test Results: precision = 0.8745
+2024-05-03 17:35:34 - INFO - Verbose test Results: recall = 1.0000
+2024-05-03 17:35:34 - INFO - Verbose test Results: f1 = 0.9331
+2024-05-03 17:35:34 - INFO - Verbose test Results: span_precision = 0.8745
+2024-05-03 17:35:34 - INFO - Verbose test Results: span_recall = 1.0000
+2024-05-03 17:35:34 - INFO - Verbose test Results: span_f1 = 0.9331
+2024-05-03 17:35:34 - INFO - Verbose test Results: exact_match = 0.8188
+2024-05-03 17:35:34 - INFO - Reading paraphrase split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/paraphrase/test.txt
+2024-05-03 17:35:34 - INFO - Number of samples: total=306
+2024-05-03 17:35:34 - INFO - O=2280 (745.10%)
+2024-05-03 17:35:34 - INFO - B-day=107 (34.97%)
+2024-05-03 17:35:34 - INFO - B-arrive=47 (15.36%)
+2024-05-03 17:35:34 - INFO - B-depart=108 (35.29%)
+2024-05-03 17:35:34 - INFO - B-people=29 (9.48%)
+2024-05-03 17:35:34 - INFO - I-depart=38 (12.42%)
+2024-05-03 17:35:34 - INFO - B-leave=55 (17.97%)
+2024-05-03 17:35:34 - INFO - B-dest=109 (35.62%)
+2024-05-03 17:35:34 - INFO - I-dest=45 (14.71%)
+2024-05-03 17:35:34 - INFO - I-leave=6 (1.96%)
+2024-05-03 17:35:34 - INFO - Evaluation on paraphrase test dataset...
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: precision = 0.9619
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: recall = 1.0000
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: f1 = 0.9806
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: span_precision = 0.9619
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: span_recall = 1.0000
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: span_f1 = 0.9806
+2024-05-03 17:35:40 - INFO - Paraphrase test Results: exact_match = 0.9477
+2024-05-03 17:35:40 - INFO - Reading typos split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/typos/test.txt
+2024-05-03 17:35:40 - INFO - Number of samples: total=301
+2024-05-03 17:35:40 - INFO - O=2160 (717.61%)
+2024-05-03 17:35:40 - INFO - B-day=102 (33.89%)
+2024-05-03 17:35:40 - INFO - B-arrive=45 (14.95%)
+2024-05-03 17:35:40 - INFO - B-depart=107 (35.55%)
+2024-05-03 17:35:40 - INFO - B-people=33 (10.96%)
+2024-05-03 17:35:40 - INFO - I-depart=41 (13.62%)
+2024-05-03 17:35:40 - INFO - B-leave=53 (17.61%)
+2024-05-03 17:35:40 - INFO - B-dest=108 (35.88%)
+2024-05-03 17:35:40 - INFO - I-dest=39 (12.96%)
+2024-05-03 17:35:40 - INFO - I-leave=3 (1.00%)
+2024-05-03 17:35:40 - INFO - Evaluation on typos test dataset...
+2024-05-03 17:35:48 - INFO - Typos test Results: precision = 0.9510
+2024-05-03 17:35:48 - INFO - Typos test Results: recall = 0.9955
+2024-05-03 17:35:48 - INFO - Typos test Results: f1 = 0.9727
+2024-05-03 17:35:48 - INFO - Typos test Results: span_precision = 0.9469
+2024-05-03 17:35:48 - INFO - Typos test Results: span_recall = 0.9955
+2024-05-03 17:35:48 - INFO - Typos test Results: span_f1 = 0.9706
+2024-05-03 17:35:48 - INFO - Typos test Results: exact_match = 0.9269
+2024-05-03 17:35:48 - INFO - Reading simplify split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/simplify/test.txt
+2024-05-03 17:35:48 - INFO - Number of samples: total=298
+2024-05-03 17:35:48 - INFO - O=1221 (409.73%)
+2024-05-03 17:35:48 - INFO - B-day=101 (33.89%)
+2024-05-03 17:35:48 - INFO - B-arrive=43 (14.43%)
+2024-05-03 17:35:48 - INFO - B-depart=102 (34.23%)
+2024-05-03 17:35:48 - INFO - B-people=30 (10.07%)
+2024-05-03 17:35:48 - INFO - I-depart=35 (11.74%)
+2024-05-03 17:35:48 - INFO - B-leave=53 (17.79%)
+2024-05-03 17:35:48 - INFO - B-dest=104 (34.90%)
+2024-05-03 17:35:48 - INFO - I-dest=37 (12.42%)
+2024-05-03 17:35:48 - INFO - I-leave=5 (1.68%)
+2024-05-03 17:35:48 - INFO - Evaluation on simplify test dataset...
+2024-05-03 17:35:57 - INFO - Simplify test Results: precision = 0.9665
+2024-05-03 17:35:57 - INFO - Simplify test Results: recall = 1.0000
+2024-05-03 17:35:57 - INFO - Simplify test Results: f1 = 0.9830
+2024-05-03 17:35:57 - INFO - Simplify test Results: span_precision = 0.9665
+2024-05-03 17:35:57 - INFO - Simplify test Results: span_recall = 1.0000
+2024-05-03 17:35:57 - INFO - Simplify test Results: span_f1 = 0.9830
+2024-05-03 17:35:57 - INFO - Simplify test Results: exact_match = 0.9497
+2024-05-03 17:35:57 - INFO - Reading speech split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/speech/test.txt
+2024-05-03 17:35:57 - INFO - Number of samples: total=307
+2024-05-03 17:35:57 - INFO - O=2388 (777.85%)
+2024-05-03 17:35:57 - INFO - B-day=107 (34.85%)
+2024-05-03 17:35:57 - INFO - B-arrive=50 (16.29%)
+2024-05-03 17:35:57 - INFO - I-arrive=55 (17.92%)
+2024-05-03 17:35:57 - INFO - B-depart=108 (35.18%)
+2024-05-03 17:35:57 - INFO - I-depart=56 (18.24%)
+2024-05-03 17:35:57 - INFO - B-people=30 (9.77%)
+2024-05-03 17:35:57 - INFO - B-leave=59 (19.22%)
+2024-05-03 17:35:57 - INFO - I-leave=68 (22.15%)
+2024-05-03 17:35:57 - INFO - B-dest=115 (37.46%)
+2024-05-03 17:35:57 - INFO - I-dest=62 (20.20%)
+2024-05-03 17:35:57 - INFO - Evaluation on speech test dataset...
+2024-05-03 17:36:01 - INFO - Speech test Results: precision = 0.9710
+2024-05-03 17:36:01 - INFO - Speech test Results: recall = 0.9979
+2024-05-03 17:36:01 - INFO - Speech test Results: f1 = 0.9842
+2024-05-03 17:36:01 - INFO - Speech test Results: span_precision = 0.9710
+2024-05-03 17:36:01 - INFO - Speech test Results: span_recall = 0.9979
+2024-05-03 17:36:01 - INFO - Speech test Results: span_f1 = 0.9842
+2024-05-03 17:36:01 - INFO - Speech test Results: exact_match = 0.9544
+2024-05-03 17:36:01 - INFO - Reading negation split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/negation/test.txt
+2024-05-03 17:36:01 - INFO - Number of samples: total=183
+2024-05-03 17:36:01 - INFO - O=1830 (1000.00%)
+2024-05-03 17:36:01 - INFO - B-dest=67 (36.61%)
+2024-05-03 17:36:01 - INFO - B-leave=38 (20.77%)
+2024-05-03 17:36:01 - INFO - I-leave=2 (1.09%)
+2024-05-03 17:36:01 - INFO - B-day=67 (36.61%)
+2024-05-03 17:36:01 - INFO - B-depart=70 (38.25%)
+2024-05-03 17:36:01 - INFO - I-depart=29 (15.85%)
+2024-05-03 17:36:01 - INFO - B-people=12 (6.56%)
+2024-05-03 17:36:01 - INFO - I-dest=32 (17.49%)
+2024-05-03 17:36:01 - INFO - B-arrive=28 (15.30%)
+2024-05-03 17:36:01 - INFO - Evaluation on negation test dataset...
+2024-05-03 17:36:05 - INFO - Negation test Results: precision = 0.9758
+2024-05-03 17:36:05 - INFO - Negation test Results: recall = 1.0000
+2024-05-03 17:36:05 - INFO - Negation test Results: f1 = 0.9877
+2024-05-03 17:36:05 - INFO - Negation test Results: span_precision = 0.9758
+2024-05-03 17:36:05 - INFO - Negation test Results: span_recall = 1.0000
+2024-05-03 17:36:05 - INFO - Negation test Results: span_f1 = 0.9877
+2024-05-03 17:36:05 - INFO - Negation test Results: exact_match = 0.9617
+2024-05-03 17:36:05 - INFO - Reading contraction split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/contractions/test.txt
+2024-05-03 17:36:05 - INFO - Number of samples: total=111
+2024-05-03 17:36:05 - INFO - O=995 (896.40%)
+2024-05-03 17:36:05 - INFO - B-depart=43 (38.74%)
+2024-05-03 17:36:05 - INFO - I-depart=18 (16.22%)
+2024-05-03 17:36:05 - INFO - B-leave=27 (24.32%)
+2024-05-03 17:36:05 - INFO - B-dest=31 (27.93%)
+2024-05-03 17:36:05 - INFO - B-day=48 (43.24%)
+2024-05-03 17:36:05 - INFO - B-people=5 (4.50%)
+2024-05-03 17:36:05 - INFO - I-dest=14 (12.61%)
+2024-05-03 17:36:05 - INFO - B-arrive=17 (15.32%)
+2024-05-03 17:36:05 - INFO - I-leave=2 (1.80%)
+2024-05-03 17:36:05 - INFO - Evaluation on contraction test dataset...
+2024-05-03 17:36:06 - INFO - Contraction test Results: precision = 0.9661
+2024-05-03 17:36:06 - INFO - Contraction test Results: recall = 1.0000
+2024-05-03 17:36:06 - INFO - Contraction test Results: f1 = 0.9828
+2024-05-03 17:36:06 - INFO - Contraction test Results: span_precision = 0.9661
+2024-05-03 17:36:06 - INFO - Contraction test Results: span_recall = 1.0000
+2024-05-03 17:36:06 - INFO - Contraction test Results: span_f1 = 0.9828
+2024-05-03 17:36:06 - INFO - Contraction test Results: exact_match = 0.9459
+2024-05-03 17:36:06 - INFO - Reading expansion split from /home/tnakirek/Demo-NSF/data/multiWOZ-new/test/expansions/test.txt
+2024-05-03 17:36:06 - INFO - Number of samples: total=50
+2024-05-03 17:36:06 - INFO - O=437 (874.00%)
+2024-05-03 17:36:06 - INFO - B-day=18 (36.00%)
+2024-05-03 17:36:06 - INFO - B-arrive=6 (12.00%)
+2024-05-03 17:36:06 - INFO - B-depart=24 (48.00%)
+2024-05-03 17:36:06 - INFO - B-leave=8 (16.00%)
+2024-05-03 17:36:06 - INFO - B-dest=27 (54.00%)
+2024-05-03 17:36:06 - INFO - I-dest=13 (26.00%)
+2024-05-03 17:36:06 - INFO - I-depart=10 (20.00%)
+2024-05-03 17:36:06 - INFO - Evaluation on expansion test dataset...
+2024-05-03 17:36:07 - INFO - expansion test Results: precision = 0.9881
+2024-05-03 17:36:07 - INFO - expansion test Results: recall = 1.0000
+2024-05-03 17:36:07 - INFO - expansion test Results: f1 = 0.9940
+2024-05-03 17:36:07 - INFO - expansion test Results: span_precision = 0.9881
+2024-05-03 17:36:07 - INFO - expansion test Results: span_recall = 1.0000
+2024-05-03 17:36:07 - INFO - expansion test Results: span_f1 = 0.9940
+2024-05-03 17:36:07 - INFO - expansion test Results: exact_match = 0.9800

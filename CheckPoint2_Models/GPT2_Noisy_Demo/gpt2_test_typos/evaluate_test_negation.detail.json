@@ -1,0 +1,37 @@
+[
+    {
+        "sentence": "i will not be going to london liverpool street on sunday . In the above sentence : ",
+        "true_ent": "london liverpool street is a dest",
+        "pred_ent": "london liverpool street is a dest , sunday is a day"
+    },
+    {
+        "sentence": "yes i would n't like to go from leicester to cambridge and leave after 11:15 please . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a dest , 11:15 is a leave"
+    },
+    {
+        "sentence": "i 'm not looking for a train to take 5me to cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a dest , 5 is a people"
+    },
+    {
+        "sentence": "i would n't like to leave on saturday from london liverpool street In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "saturday is a day , london liverpool street is a depart"
+    },
+    {
+        "sentence": "ca n't you verify that it will arrive in stevenage by 09:00 ? In the above sentence : ",
+        "true_ent": "stevenage is a dest",
+        "pred_ent": "stevenage is a dest , 09:00 is a arrive"
+    },
+    {
+        "sentence": "i would n't like to leave from stevenage on thursday and get to cambridge by 9:15 . In the above sentence : ",
+        "true_ent": "stevenage is a depart , thursday is a day",
+        "pred_ent": "stevenage is a depart , thursday is a day , cambridge is a dest"
+    },
+    {
+        "sentence": "i would n't like to leave cambridge and go to london liver pool . In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "cambridge is a depart , london liver pool is a dest"
+    }
+]

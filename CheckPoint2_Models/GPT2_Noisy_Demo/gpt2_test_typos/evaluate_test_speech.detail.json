@@ -1,0 +1,72 @@
+[
+    {
+        "sentence": "actually i need to go to london liverpool street from cab bridge In the above sentence : ",
+        "true_ent": "london liverpool street is a depart",
+        "pred_ent": "london liverpool street is a depart , cambridge is a dest"
+    },
+    {
+        "sentence": "i would like to leave brock 's born on tuesday In the above sentence : ",
+        "true_ent": "brock 's born is a depart , tuesday is a day",
+        "pred_ent": "brock's born is a depart , tuesday is a day"
+    },
+    {
+        "sentence": "i need to go to ily after twelve o 'clock In the above sentence : ",
+        "true_ent": "ily is a dest",
+        "pred_ent": "ily is a dest , twelve is a stay"
+    },
+    {
+        "sentence": "can you verify that it will arrive in stevenage bi nine o 'clock In the above sentence : ",
+        "true_ent": "stevenage is a dest",
+        "pred_ent": "stevenage is a dest , 9:30 is a arrive"
+    },
+    {
+        "sentence": "ai will be going to london liverpool street on sunday In the above sentence : ",
+        "true_ent": "london liverpool street is a dest",
+        "pred_ent": "london liverpool street is a dest , sunday is a day"
+    },
+    {
+        "sentence": "i 'm looking for a train going to cambridge plese In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a dest , plese is a depart"
+    },
+    {
+        "sentence": "i would like to leave cambridge and go-to london liverpool In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "cambridge is a depart , london liverpool is a dest"
+    },
+    {
+        "sentence": "so i would like to leave on saturday from london liverpool street In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "saturday is a day , london liverpool street is a depart"
+    },
+    {
+        "sentence": "i 'm looking for a train to take five meter came bridge In the above sentence : ",
+        "true_ent": "came bridge is a dest",
+        "pred_ent": "came bridge is a dest , five is a people"
+    },
+    {
+        "sentence": "i would like to leave from stevenage on thursday and gett to cambridge by nine fifteen In the above sentence : ",
+        "true_ent": "stevenage is a depart , thursday is a day",
+        "pred_ent": "stevenage is a depart , thursday is a day , cambridge is a dest"
+    },
+    {
+        "sentence": "i i need to book a train departing from cambridge after nine fifteen In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "cambridge is a depart , after 9teen is a leave"
+    },
+    {
+        "sentence": "yes i would like to go from lester to cambridge and leave after eleven fifteen pleas In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a dest , after twelve is a leave"
+    },
+    {
+        "sentence": "i need a train leaving from london liverpool street on friday In the above sentence : ",
+        "true_ent": "london liverpool street is a depart",
+        "pred_ent": "london liverpool street is a depart , friday is a day"
+    },
+    {
+        "sentence": "i need to get to leicester on sunday In the above sentence : ",
+        "true_ent": "leicester is a dest",
+        "pred_ent": "leicester is a dest , sunday is a day"
+    }
+]

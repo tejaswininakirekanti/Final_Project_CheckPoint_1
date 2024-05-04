@@ -1,0 +1,57 @@
+[
+    {
+        "sentence": "actually i need to go to london liverpool street from cabridge . In the above sentence : ",
+        "true_ent": "london liverpool street is a depart",
+        "pred_ent": "london liverpool street is a depart , cambridge is a dest"
+    },
+    {
+        "sentence": "i need to go to ely after 12:00 . In the above sentence : ",
+        "true_ent": "ely is a dest",
+        "pred_ent": "ely is a dest , 12:00 is a leave"
+    },
+    {
+        "sentence": "can you verify that it will arrive in stevenage by 09:00 ? In the above sentence : ",
+        "true_ent": "stevenage is a dest",
+        "pred_ent": "stevenage is a dest , 09:00 is a arrive"
+    },
+    {
+        "sentence": "i will be going to london liverpool street on sunday . In the above sentence : ",
+        "true_ent": "london liverpool street is a dest",
+        "pred_ent": "london liverpool street is a dest , sunday is a day"
+    },
+    {
+        "sentence": "i would like to leave cambridge and go to london liver pool . In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "cambridge is a depart , london liver pool is a dest"
+    },
+    {
+        "sentence": "i would like to leave on saturday from london liverpool street In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "saturday is a day , london liverpool street is a depart"
+    },
+    {
+        "sentence": "i 'm looking for a train to take 5me to cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a dest , 5me is a people"
+    },
+    {
+        "sentence": "i would like to leave from stevenage on thursday and get to cambridge by 9:15 . In the above sentence : ",
+        "true_ent": "stevenage is a depart , thursday is a day",
+        "pred_ent": "stevenage is a depart , thursday is a day , cambridge is a dest"
+    },
+    {
+        "sentence": "i need to book a train departing from cambridge after 9:15 . In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "cambridge is a depart , after 9:15 is a leave"
+    },
+    {
+        "sentence": "yes i would like to go from leicester to cambridge and leave after 11:15 please . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "cambridge is a dest , 11:15 is a leave"
+    },
+    {
+        "sentence": "i need to get to leicester on sunday . In the above sentence : ",
+        "true_ent": "leicester is a dest",
+        "pred_ent": "leicester is a dest , sunday is a day"
+    }
+]
