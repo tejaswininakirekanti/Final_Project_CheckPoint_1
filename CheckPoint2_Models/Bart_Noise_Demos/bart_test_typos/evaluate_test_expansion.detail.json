@@ -1,0 +1,22 @@
+[
+    {
+        "sentence": "i will be leaving from london kings cross and need to leave after 17:15 . In the above sentence : ",
+        "true_ent": "london kings cross is a dest , 17:15 is a leave",
+        "pred_ent": "london kings cross is a depart , 17:15 is a leave"
+    },
+    {
+        "sentence": "i am at bishops stortford and would like to go to cambridge . In the above sentence : ",
+        "true_ent": "bishops stortford is a depart , cambridge is a dest",
+        "pred_ent": "bishops stortford is a dest , cambridge is a depart"
+    },
+    {
+        "sentence": "i am looking for a train to take 5me to cambridge . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "5me is a people , cambridge is a dest"
+    },
+    {
+        "sentence": "i would like to find a train from leiceter on saturday . In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "leiceter is a depart , saturday is a day"
+    }
+]
