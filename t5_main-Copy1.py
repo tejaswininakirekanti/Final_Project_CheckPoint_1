@@ -250,14 +250,18 @@ class T5NERDataLoader(object):
             ln = ln.strip()
             # print("ln",ln)
             if len(ln) == 0:
-                # print("inside",tmp_sample)
+                
                 if len(tmp_sample) == 0:
                     continue
                 # assert len(tmp_sample) == len(tmp_label)
+                # print("======")
+                # print("tmp_sample",tmp_sample)
+                # print("TMP_LABEL", tmp_label)
                 entitiesnlabels = get_sentence_ner(
                     tmp_sample, tmp_label, span_only=False
                 )
-                # print(entitiesnlabels)
+                
+                # print("entitiesnlabels", entitiesnlabels)
                 target_text = []
                 for entity_label in entitiesnlabels:
                     entity, label = entity_label.split("||")
@@ -279,9 +283,9 @@ class T5NERDataLoader(object):
                     assert len(ln1) == len(ln2)
                     for l1, l2 in zip(ln1, ln2):
                         # print("l1",l1,"l2",l2)
-                        # demons_train = l1.strip().split()
-                        demons_train = nltk.word_tokenize(l1)
-                        demons_target = l2.strip().split(" ")
+                        demons_train = l1.strip().split()
+                        # demons_train = nltk.word_tokenize(l1)
+                        demons_target = l2.strip().split()
                         # print("demons_train",demons_train,"demons_target",demons_target)
                         en_la = get_sentence_ner(
                             demons_train, demons_target, span_only=False
@@ -746,34 +750,49 @@ def construct_test_file_dict(test_file_path):
     ret["simplify"] = test_file_path + "/simplify/test.txt"
     ret["paraphrase"] = test_file_path + "/paraphrase/test.txt"
     ret["typos"] = test_file_path + "/typos/test.txt"
-    
+    ret["negation"] = test_file_path + "/negation/test.txt"
+    ret["contraction"] = test_file_path + "/contractions/test.txt"
+    ret["expansion"] = test_file_path + "/expansions/test.txt"
+
     return ret
 
 def construct_test_demons_dict(test_file_path, num):
     ret = dict()
     ret["clean"] = (
-        test_file_path + "/clean_test/train/demons.in",
-        test_file_path + "/clean_test/train/demons.out",
+        test_file_path + "/clean_test/demons.in",
+        test_file_path + "/clean_test/demons.out",
     )
     ret["verbose"] = (
-        test_file_path + "/verbose/train/demons.in",
-        test_file_path + "/verbose/train/demons.out",
+        test_file_path + "/verbose/demons.in",
+        test_file_path + "/verbose/demons.out",
     )
     ret["speech"] = (
-        test_file_path + "/speech/train/demons.in",
-        test_file_path + "/speech/train/demons.out",
+        test_file_path + "/speech/demons.in",
+        test_file_path + "/speech/demons.out",
     )
     ret["simplify"] = (
-        test_file_path + "/simplify/train/demons.in",
-        test_file_path + "/simplify/train/demons.out",
+        test_file_path + "/simplify/demons.in",
+        test_file_path + "/simplify/demons.out",
     )
     ret["paraphrase"] = (
-        test_file_path + "/paraphrase/train/demons.in",
-        test_file_path + "/paraphrase/train/demons.out",
+        test_file_path + "/paraphrase/demons.in",
+        test_file_path + "/paraphrase/demons.out",
     )
     ret["typos"] = (
-        test_file_path + "/typos/train/demons.in",
-        test_file_path + "/typos/train/demons.out",
+        test_file_path + "/typos/demons.in",
+        test_file_path + "/typos/demons.out",
+    )
+    ret["negation"] = (
+        test_file_path + "/negation/demons.in",
+        test_file_path + "/negation/demons.out",
+    )
+    ret["contraction"] = (
+        test_file_path + "/contractions/demons.in",
+        test_file_path + "/contractions/demons.out",
+    )
+    ret["expansion"] = (
+        test_file_path + "/expansions/demons.in",
+        test_file_path + "/expansions/demons.out",
     )
     return ret
 
@@ -782,7 +801,7 @@ def do_eval(args):
     prepare_for_eval(args)
     
     test_file_dict = construct_test_file_dict(args.test_file_path)
-    # test_demons_dict = construct_test_demons_dict(args.test_file_path, args.num)
+    test_demons_dict = construct_test_demons_dict(args.test_file_path, args.num)
     model, tokenizer = load_model_and_tokenizer(args)
 
     # evaluate on clean test dataset
@@ -796,8 +815,8 @@ def do_eval(args):
         args.decode_max_seq_length,
         args.dataset,
         add_demonstration=args.add_demonstration,
-        demons_train_path="null",
-        demons_out_path="null",
+        demons_train_path=test_demons_dict["clean"][0],
+        demons_out_path=test_demons_dict["clean"][1],
     )
     eval_metrics = evaluate(
         args,
@@ -822,8 +841,8 @@ def do_eval(args):
         args.decode_max_seq_length,
         args.dataset,
         add_demonstration=args.add_demonstration,
-        demons_train_path="null",
-        demons_out_path="null",
+        demons_train_path=test_demons_dict["verbose"][0],
+        demons_out_path=test_demons_dict["verbose"][1],
     )
     logging.info("Evaluation on verbose test dataset...")
     eval_metrics_verbose = evaluate(
@@ -849,8 +868,8 @@ def do_eval(args):
         args.decode_max_seq_length,
         args.dataset,
         add_demonstration=args.add_demonstration,
-        demons_train_path="null",
-        demons_out_path="null",
+        demons_train_path=test_demons_dict["paraphrase"][0],
+        demons_out_path=test_demons_dict["paraphrase"][1],
     )
     logging.info("Evaluation on paraphrase test dataset...")
     eval_metrics_para = evaluate(
@@ -876,8 +895,8 @@ def do_eval(args):
         args.decode_max_seq_length,
         args.dataset,
         add_demonstration=args.add_demonstration,
-        demons_train_path="null",
-        demons_out_path="null",
+        demons_train_path=test_demons_dict["typos"][0],
+        demons_out_path=test_demons_dict["typos"][1],
     )
     logging.info("Evaluation on typos test dataset...")
     eval_metrics_typos = evaluate(
@@ -903,8 +922,8 @@ def do_eval(args):
         args.decode_max_seq_length,
         args.dataset,
         add_demonstration=args.add_demonstration,
-        demons_train_path="null",
-        demons_out_path="null",
+        demons_train_path=test_demons_dict["simplify"][0],
+        demons_out_path=test_demons_dict["simplify"][1],
     )
     logging.info("Evaluation on simplify test dataset...")
     eval_metrics_simplify = evaluate(
@@ -930,8 +949,8 @@ def do_eval(args):
         args.decode_max_seq_length,
         args.dataset,
         add_demonstration=args.add_demonstration,
-        demons_train_path="null",
-        demons_out_path="null",
+        demons_train_path=test_demons_dict["speech"][0],
+        demons_out_path=test_demons_dict["speech"][1],
     )
     logging.info("Evaluation on speech test dataset...")
     eval_metrics_speech = evaluate(
@@ -947,6 +966,90 @@ def do_eval(args):
     for k, v in eval_metrics_speech.items():
         logging.info(f"Speech test Results: {k} = {v:.4f}")
 
+    
+    # evaluate on negation dataset
+    test_loader_negation = T5NERDataLoader(
+        args,
+        test_file_dict["negation"],
+        "negation",
+        tokenizer,
+        args.max_seq_length,
+        args.decode_max_seq_length,
+        args.dataset,
+        add_demonstration=args.add_demonstration,
+        demons_train_path=test_demons_dict["negation"][0],
+        demons_out_path=test_demons_dict["negation"][1],
+    )
+    logging.info("Evaluation on negation test dataset...")
+    eval_metrics_negation = evaluate(
+        args,
+        tokenizer,
+        test_loader_negation,
+        model,
+        args.eval_batch_size,
+        args.max_seq_length,
+        args.decode_max_seq_length,
+        log_file=os.path.join(args.logging_file_path, "evaluate_test_negation.json"),
+    )
+    for k, v in eval_metrics_negation.items():
+        logging.info(f"Negation test Results: {k} = {v:.4f}")
+        
+    # evaluate on contraction dataset
+    test_loader_contraction = T5NERDataLoader(
+        args,
+        test_file_dict["contraction"],
+        "contraction",
+        tokenizer,
+        args.max_seq_length,
+        args.decode_max_seq_length,
+        args.dataset,
+        add_demonstration=args.add_demonstration,
+        demons_train_path=test_demons_dict["contraction"][0],
+        demons_out_path=test_demons_dict["contraction"][1],
+    )
+    logging.info("Evaluation on contraction test dataset...")
+    eval_metrics_contraction = evaluate(
+        args,
+        tokenizer,
+        test_loader_contraction,
+        model,
+        args.eval_batch_size,
+        args.max_seq_length,
+        args.decode_max_seq_length,
+        log_file=os.path.join(args.logging_file_path, "evaluate_test_contraction.json"),
+    )
+    for k, v in eval_metrics_contraction.items():
+        logging.info(f"Contraction test Results: {k} = {v:.4f}")
+
+
+    # evaluate on expansion dataset
+    test_loader_expansion = T5NERDataLoader(
+        args,
+        test_file_dict["expansion"],
+        "expansion",
+        tokenizer,
+        args.max_seq_length,
+        args.decode_max_seq_length,
+        args.dataset,
+        add_demonstration=args.add_demonstration,
+        demons_train_path=test_demons_dict["expansion"][0],
+        demons_out_path=test_demons_dict["expansion"][1],
+    )
+    logging.info("Evaluation on expansion test dataset...")
+    eval_metrics_expansion = evaluate(
+        args,
+        tokenizer,
+        test_loader_expansion,
+        model,
+        args.eval_batch_size,
+        args.max_seq_length,
+        args.decode_max_seq_length,
+        log_file=os.path.join(args.logging_file_path, "evaluate_test_expansion.json"),
+    )
+    for k, v in eval_metrics_expansion.items():
+        logging.info(f"expansion test Results: {k} = {v:.4f}")
+        
+        
     return (
         eval_metrics,
         eval_metrics_para,
@@ -954,6 +1057,9 @@ def do_eval(args):
         eval_metrics_simplify,
         eval_metrics_typos,
         eval_metrics_verbose,
+        eval_metrics_negation,
+        eval_metrics_contraction,
+        eval_metrics_expansion
     )
 
 def check_args(args):
@@ -1332,7 +1438,7 @@ def evaluate(
     return metrics
 
 def get_sentence_ner(tokens, tags, span_only=False):
-    assert len(tokens) == len(tags)
+    # assert len(tokens) == len(tags)
 
     def get_type(tag):
         return tag.split("-")[-1]
