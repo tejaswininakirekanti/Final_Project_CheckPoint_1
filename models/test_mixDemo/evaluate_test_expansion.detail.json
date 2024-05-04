@@ -1,0 +1,12 @@
+[
+    {
+        "sentence": "i need to leave after 8:15 and go to london kings cross , please .. i just want to leave after 16:45 going from cambridge to london kings cross on thursday .. i will be leaving from london kings cross and need to leave after 17:15 . In the above sentence : ",
+        "true_ent": "london kings cross is a dest , 17:15 is a leave",
+        "pred_ent": "london kings cross is a depart , 17:15 is a leave"
+    },
+    {
+        "sentence": "hello . i need help finding a train on friday .. i am also looking for a train on saturday .. i would like to find a train from leiceter on saturday . In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "leiceter is a depart , saturday is a day"
+    }
+]
