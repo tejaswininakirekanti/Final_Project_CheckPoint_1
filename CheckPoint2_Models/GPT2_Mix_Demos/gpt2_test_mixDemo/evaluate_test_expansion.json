@@ -1,0 +1,9 @@
+{
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "span_precision": 1.0,
+    "span_recall": 1.0,
+    "span_f1": 1.0,
+    "exact_match": 1.0
+}
