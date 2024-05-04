@@ -1,0 +1,112 @@
+[
+    {
+        "sentence": "thurssWy mPtning at 9 am. i wan4 to go to 9DterborouHh .. i would n't like to leave after 09:00 on sunday . In the above sentence : ",
+        "true_ent": "after 09:00 is a leave , sunday is a day",
+        "pred_ent": "09:00 is a leave , sunday is a day"
+    },
+    {
+        "sentence": "i wKll be gking to Vanbridge .. i ll be departlmg froj broDbournW and i d llke to go to sambridgF .. i will not be leaving stansted airport friday to head toward cambridge . In the above sentence : ",
+        "true_ent": "stansted airport is a depart , friday is a day , cambridge is a dest",
+        "pred_ent": "friday is a day , cambridge is a dest"
+    },
+    {
+        "sentence": "i wKll be gking to Vanbridge .. i d lLke to go to ni3wich .. i will not be going to london liverpool street on sunday . In the above sentence : ",
+        "true_ent": "london liverpool street is a dest",
+        "pred_ent": "london liverpool street is a dest , sunday is a day"
+    },
+    {
+        "sentence": "i m goinh to broxgLurne .. i wany to go to broxfpurne , pl4Ase .. i 'm not heading to broxbourne . In the above sentence : ",
+        "true_ent": "broxbourne is a dest",
+        "pred_ent": "broxbourne is a depart"
+    },
+    {
+        "sentence": "are thers any trsine goinh to cqnbridge on ftixay ?. i wany to go to broxfpurne , pl4Ase .. does n't that depart from broxbourne station ? In the above sentence : ",
+        "true_ent": "broxbourne is a depart",
+        "pred_ent": "broxbourne station is a depart"
+    },
+    {
+        "sentence": "can you jelp me get a trAin goinT to bishLpa stKrtforX ?. i m liokiGg for a trAin norwUcG .. i am not looking for a train . In the above sentence : ",
+        "true_ent": "train is a depart",
+        "pred_ent": "not is a area"
+    },
+    {
+        "sentence": "can you jelp me get a trAin goinT to bishLpa stKrtforX ?. i am lolkihg for a trAin f5om caJbridgd to ely .. i would not like to find a train from leiceter on saturday . In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "leiceter is a depart , saturday is a day"
+    },
+    {
+        "sentence": "yes , i m lolkinf for a nhseum to go to .. i wKll be gking to Vanbridge .. yes i would n't like to go from leicester to cambridge and leave after 11:15 please . In the above sentence : ",
+        "true_ent": "cambridge is a dest",
+        "pred_ent": "leicester is a depart , cambridge is a dest , 11:15 is a leave"
+    },
+    {
+        "sentence": "can you jelp me get a trAin goinT to bishLpa stKrtforX ?. hi , i nsed to taIe a trAin on wednFcday , can you hel9 me ?. i am not looking for a train that goes to cambridge around 10:45 In the above sentence : ",
+        "true_ent": "cambridge is a dest , 10:45 is a arrive",
+        "pred_ent": "cambridge is a dest , 10:45 is a leave"
+    },
+    {
+        "sentence": "i wilO be go8ng to VOshops stoFfford .. thurssWy mPtning at 9 am. i would n't like to arrive in cambridge by 8:15 . In the above sentence : ",
+        "true_ent": "8:15 is a arrive",
+        "pred_ent": "cambridge is a dest , 8:15 is a arrive"
+    },
+    {
+        "sentence": "i wKll be gking to Vanbridge .. i d l8ke to go frPm brixbournW to camNdidge on mlbday .. i would n't like to leave on saturday from london liverpool street In the above sentence : ",
+        "true_ent": "saturday is a day",
+        "pred_ent": "saturday is a day , london liverpool street is a depart"
+    },
+    {
+        "sentence": "i Sant to go to petetgorouTh .. i ll be goiJg to Xakbridge on the samw day as my st0p at trabeolers resg .. i am not looking to go from cambridge to peterborough and leave after 14:15 In the above sentence : ",
+        "true_ent": "cambridge is a depart , 14:15 is a leave",
+        "pred_ent": "cambridge is a depart , peterborough is a dest , 14:15 is a leave"
+    },
+    {
+        "sentence": "i m giing to stevenahs on wdEnesday .. i am goinV to stevenqbe , on wedmesCay .. ca n't you verify that it will arrive in stevenage by 09:00 ? In the above sentence : ",
+        "true_ent": "stevenage is a dest",
+        "pred_ent": "stevenage is a dest , 09:00 is a arrive"
+    },
+    {
+        "sentence": "i d lile to go to stevenaFr .. i 1ill be departigv out of stevenwgf .. i would n't like to leave from stevenage on thursday and get to cambridge by 9:15 . In the above sentence : ",
+        "true_ent": "stevenage is a depart , thursday is a day",
+        "pred_ent": "stevenage is a depart , thursday is a day , cambridge is a dest , 9:15 is a arrive"
+    },
+    {
+        "sentence": "i nerd a trAin froH kingD l7nn to go to caNbrOdge. i wKll be gking to Vanbridge .. i would n't like to arrive in cambridge by 14:15 . In the above sentence : ",
+        "true_ent": "14:15 is a arrive",
+        "pred_ent": "cambridge is a dest , 14:15 is a arrive"
+    },
+    {
+        "sentence": "11 pm and i wanH it for tnree pei9le. thurssWy mPtning at 9 am. i would n't prefer to leave after 13:45 please In the above sentence : ",
+        "true_ent": "after 13:45 is a leave",
+        "pred_ent": "13:45 is a leave"
+    },
+    {
+        "sentence": "i am lPokinR to go to BPrwich .. i Sant to go to petetgorouTh .. i am not going to cambridge and need to leave after 12:00 In the above sentence : ",
+        "true_ent": "cambridge is a dest , 12:00 is a leave",
+        "pred_ent": "12:00 is a leave"
+    },
+    {
+        "sentence": "can you jelp me get a trAin goinT to bishLpa stKrtforX ?. i m liokiGg for a trAin norwUcG .. i am not looking for a train . In the above sentence : ",
+        "true_ent": "train is a depart",
+        "pred_ent": "not is a area"
+    },
+    {
+        "sentence": "i m goinh to broxgLurne .. i wany to go to broxfpurne , pl4Ase .. i am not going to cambridge from broxbourne . In the above sentence : ",
+        "true_ent": "cambridge is a dest , broxbourne is a depart",
+        "pred_ent": "broxbourne is a depart"
+    },
+    {
+        "sentence": "i nfed to leabe Vahbridge on tueCdAy .. i wKll be gking to Vanbridge .. i will not be leaving from london kings cross and need to leave after 17:15 . In the above sentence : ",
+        "true_ent": "london kings cross is a dest , 17:15 is a leave",
+        "pred_ent": "london kings cross is a depart , 17:15 is a leave"
+    },
+    {
+        "sentence": "i wKll be gking to Vanbridge .. i wojld liIe to go to M9rwich .. i would n't like to leave cambridge after 09:15 . In the above sentence : ",
+        "true_ent": "cambridge is a depart , 09:15 is a leave",
+        "pred_ent": "09:15 is a leave"
+    },
+    {
+        "sentence": "i wKll be gking to Vanbridge .. i d lLke to go to ni3wich .. i would n't like to leave cambridge and go to london liver pool . In the above sentence : ",
+        "true_ent": "cambridge is a depart",
+        "pred_ent": "cambridge is a depart , london liverpool is a dest"
+    }
+]
